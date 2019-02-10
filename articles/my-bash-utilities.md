@@ -23,7 +23,7 @@ Command line tools allow you to extend them relatively easily compared to GUI
 tools. I would like to share with you some of the "extensions" I have made to
 improve my Bash experience.
 
-## Grep fallback
+## [Grep fallback](https://github.com/bas080/grep-fallback)
 
 A very minimal extensions that overwrites the default behavior for when
 a command is not found. Instead of printing:
@@ -40,17 +40,13 @@ cat tv_shows.txt | pony
 
 Would output all TV shows that contain the substring pony.
 
-> https://github.com/bas080/grep-fallback
-
-## Direct
+## [Direct](https://github.com/bas080/direct)
 
 An addition to the `cd` command that allows one to jump to a previously visited
 directory. It uses the user provided substrings to search the directory the
 user would like to jump to.
 
-> https://github.com/bas080/direct
-
-## Projector
+## [Projector](https://github.com/bas080/projector)
 
 There are many reasons to why one would use projector. In essence it just
 sources a file whenever the user `cd`s into a directory. I use it for several
@@ -68,9 +64,7 @@ use cases.
 Projector is one of my most favorite bash tools. I use it daily and without
 really realizing it. It has become part of my Bash experience.
 
-> https://github.com/bas080/projector
-
-## Bake
+## [Bake](https://github.com/bas080/bake)
 
 Bake is not for you if you are someone that doesn't want to update their bash
 scripts frequently, or does not have to setup a development environment
@@ -85,8 +79,6 @@ You might be wondering what Bash dependencies are. Many tools out there require
 you to source some script in your `~/.bashrc`. Bake tries to make that
 experience a bit nicer by defining a function that gets all your dependencies
 and `bake`s them into a single file.
-
-> https://github.com/bas080/bake
 
 I use bake to source all bash scripts mentioned in this article. I also source
 and keep my [nvm](https://github.com/creationix/nvm) and
