@@ -1,0 +1,31 @@
+{
+  "name": "bas080.github.io",
+  "version": "0.0.0",
+  "description": "bas080.github.io ================ My webpage that includes articles, documentation and projects.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "standard ./src/*.js ./src/**/*.js",
+    "build": "node ./src/index.js",
+    "format": "standard --fix ./src/*.js ./src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bas080/bas080.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bas080/bas080.github.io/issues"
+  },
+  "homepage": "https://github.com/bas080/bas080.github.io#readme",
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "highlight.js": "^9.14.2",
+    "markdown-stream": "^1.0.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}

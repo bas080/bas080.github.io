@@ -1,0 +1,113 @@
+:root {
+  --primary: #cc0051;
+  --background: #131313;
+  --background-lighter: #222;
+  --foreground: #fee;
+  --foreground-subtle: #aaa;
+  --invert-foreground: var(--background);
+  --invert-color: var(--background);
+}
+
+html {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 4vw;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+code {
+  font-size: 1rem;
+  border-left: 2px solid var(--foreground-subtle);
+  padding: 1vw;
+  display: block;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.hljs-string {
+  color: var(--primary);
+}
+
+.hljs-keyword {
+  color: var(--foreground-subtle);
+}
+
+@media (min-width : 1224px) {
+  html {
+    font-size: 1em;
+  }
+
+  p {
+    max-width: 35vw;
+  }
+}
+
+ul {
+  list-style-type: square;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1, h2 {
+  padding-top: 0.5em;;
+  padding-bottom: 0.5em;
+}
+
+h1 a, h2 a, h3 a {
+  text-transform: capitalize;
+}
+
+body > * {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--primary);;
+}
+
+.invert {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.invert a {
+  color: var(--invert-foreground);
+}
+
+blockquote {
+  color: var(--foreground-subtle);
+  font-style: italic;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  overflow: hidden;
+}
+
+svg {
+  display: block;
+  width: 100%;
+}
