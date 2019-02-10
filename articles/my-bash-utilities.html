@@ -111,7 +111,7 @@ svg {
   display: block;
   width: 100%;
 }
-</style><title>bas080.github.io</title></head><body><header class="invert"><h1><a href="/index.html">bas080.github.io</a></h1></header><section class="content"><article><header><h2><a href="/articles">articles</a><span> / </span><a href="/articles/my-bash-utilities.html">my bash utilities</a></h2><p>2019-2-10 17:36:45</p></header><h1>My Bash utilities</h1>
+</style><title>bas080.github.io</title></head><body><header class="invert"><h1><a href="/index.html">bas080.github.io</a></h1></header><section class="content"><article><header><h2><a href="/articles">articles</a><span> / </span><a href="/articles/my-bash-utilities.html">my bash utilities</a></h2><p>2019-2-10 18:05:56</p></header><h1>My Bash utilities</h1>
 <p><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> has become my go to
 tool for interfacing with my computer. The main reason being that I'm able to
 compose different tools easily and automate tasks I do or should do with
@@ -127,17 +127,66 @@ pressing.</p></li>
 </ul>
 <blockquote>
 <p>Bash has become an asset to me instead of a hurdle. I would advice anyone to
-get familiar with atleast one <a href="https://en.wikipedia.org/wiki/Command-line_interface">command line interface</a>.</p>
+get familiar with at least one <a href="https://en.wikipedia.org/wiki/Command-line_interface">command line interface</a>.</p>
 </blockquote>
 <p>Command line tools allow you to extend them relatively easily compared to GUI
 tools. I would like to share with you some of the &quot;extensions&quot; I have made to
 improve my Bash experience.</p>
-<h2>Direct</h2>
-<p>TBD</p>
-<h2>Projector</h2>
-<p>TBD</p>
-<h2>Bake</h2>
-<p>TBD</p>
 <h2>Grep fallback</h2>
-<p>TBD</p>
-<h3>Revisions</h3><ul><li><a href="https://github.com/bas080/bas080.github.io/commit/af4762b6dea8e64b1b46d839d11aa9305fa2818d">2019-2-10 17:36:45 by Bas</a></li></ul></article></section><section class="invert footer"><header><h2><a href="/articles">Articles</a></h2></header><article class="article-stats"><header><h3><a href="/articles/minetest.html">minetest</a></h3></header><p>2019-2-10 17:36:45</p></article><article class="article-stats"><header><h3><a href="/articles/introduction.html">introduction</a></h3></header><p>2019-2-10 17:36:45</p></article></section></body></html>
+<p>A very minimal extensions that overwrites the default behavior for when
+a command is not found. Instead of printing:</p>
+<pre><code>sh: 1: pony: not found
+</code></pre>
+<p>It instead performs a grep with pony as the regexp.</p>
+<pre><code class="language-sh">cat tv_shows.txt | pony
+</code></pre>
+<p>Would output all TV shows that contain the substring pony.</p>
+<blockquote>
+<p>https://github.com/bas080/grep-fallback</p>
+</blockquote>
+<h2>Direct</h2>
+<p>An addition to the <code>cd</code> command that allows one to jump to a previously visited
+directory. It uses the user provided substrings to search the directory the
+user would like to jump to.</p>
+<blockquote>
+<p>https://github.com/bas080/direct</p>
+</blockquote>
+<h2>Projector</h2>
+<p>There are many reasons to why one would use projector. In essence it just
+sources a file whenever the user <code>cd</code>s into a directory. I use it for several
+use cases.</p>
+<ol>
+<li>Exporting my environment variables.</li>
+<li>Defining some useful functions like <code>build</code>, <code>tests</code>, <code>start</code>, <code>debug</code>.
+Regardless of the build tools I'm using I can trust that I have defined
+a build alias or function for my project.</li>
+<li>Running some checks an reporting on them whenever I start working on
+a project. By doing this I get a status update on the state of the code that
+I'm about to touch.</li>
+<li>Define functions for tasks I find tedious.</li>
+</ol>
+<p>Projector is one of my most favorite bash tools. I use it daily and without
+really realizing it. It has become part of my Bash experience.</p>
+<blockquote>
+<p>https://github.com/bas080/projector</p>
+</blockquote>
+<h2>Bake</h2>
+<p>Bake is not for you if you are someone that doesn't want to update their bash
+scripts frequently, or does not have to setup a development environment
+frequently and doesn't want to automate their installation of Bash
+dependencies.</p>
+<p>Bake is a good tool for people that do want these things. The project isn't as
+mature as I'd like. I have changed the API several times. I do use it for
+installing all my bash dependencies.</p>
+<p>You might be wondering what Bash dependencies are. Many tools out there require
+you to source some script in your <code>~/.bashrc</code>. Bake tries to make that
+experience a bit nicer by defining a function that gets all your dependencies
+and <code>bake</code>s them into a single file.</p>
+<blockquote>
+<p>https://github.com/bas080/bake</p>
+</blockquote>
+<p>I use bake to source all bash scripts mentioned in this article. I also source
+and keep my <a href="https://github.com/creationix/nvm">nvm</a> and
+<a href="https://github.com/technomancy/leiningen">leiningen</a> scripts up to date with
+bake.</p>
+<h3>Revisions</h3><ul><li><a href="https://github.com/bas080/bas080.github.io/commit/98591924524f5e3811503a70797ec9a55e6609d4">2019-2-10 18:05:56 by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/beaec93648c0d01e5748cfa86dce3fbfa34768b5">2019-2-10 18:03:41 by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/82a0cea46f44eea93af0d5de7d2d936e6c88d142">2019-2-10 17:36:45 by Bas</a></li></ul></article></section><section class="invert footer"><header><h2><a href="/articles">Articles</a></h2></header><article class="article-stats"><header><h3><a href="/articles/minetest.html">minetest</a></h3></header><p>2019-2-10 17:36:45</p></article><article class="article-stats"><header><h3><a href="/articles/introduction.html">introduction</a></h3></header><p>2019-2-10 17:36:45</p></article></section></body></html>
