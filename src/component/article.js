@@ -27,7 +27,7 @@ const markdown = path => fs
   .createReadStream(path)
   .pipe(require('markdown-stream')('full', {
     html: true,
-    highlight: (str, lang) => hljs.highlight(lang, str).value
+    highlight: (str, lang) => lang ? hljs.highlight(lang, str).value : str
   }))
 
 function commitUrl (hash) {

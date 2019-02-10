@@ -34,7 +34,7 @@ sh: 1: pony: not found
 
 It instead performs a grep with pony as the regexp.
 
-```
+```sh
 cat tv_shows.txt | pony
 ```
 
