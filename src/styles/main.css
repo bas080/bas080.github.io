@@ -42,8 +42,9 @@ code {
     font-size: 1em;
   }
 
-  p {
+  p, ol, ul {
     max-width: 35vw;
+    padding-left:0px;
   }
 }
 
