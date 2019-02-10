@@ -1,6 +1,6 @@
 const fs = require('fs')
 const { spawnSync } = require('child_process')
-const { isEmpty, complement, prop } = require('ramda')
+const { isEmpty, complement, prop, min, max } = require('ramda')
 const path = require('path')
 const articles = require('./page/articles')
 const article = require('./page/article')
@@ -34,8 +34,8 @@ const data = json.articles.map(({ id: name }) => {
     file,
     hashes,
     stats: {
-      mtime: hashes.map(prop('date')).reduce(Math.max),
-      ctime: hashes.map(prop('date')).reduce(Math.min)
+      mtime: hashes.map(prop('date')).reduce(max),
+      ctime: hashes.map(prop('date')).reduce(min)
     }
   }
 })
