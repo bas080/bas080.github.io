@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="en"><head><style>:root {
   --primary: #cc0051;
-  --background: #131313;
-  --background-lighter: #222;
-  --foreground: #fee;
-  --foreground-subtle: #aaa;
+  --background: #EEE;
+  --background-lighter: #FFF;
+  --foreground: #000;
+  --foreground-subtle: #333;
   --invert-foreground: var(--background);
   --invert-color: var(--background);
 }
@@ -77,8 +77,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
-  text-decoration: underline;
+a:hover {
+  color: var(--foreground) !important;
 }
 
 a:visited {
@@ -111,7 +111,7 @@ svg {
   display: block;
   width: 100%;
 }
-</style><title>bas080.github.io</title></head><body><header class="invert"><h1><a href="/index.html">bas080.github.io</a></h1></header><section class="content"><article><header><h2><a href="/articles">articles</a><span> / </span><a href="/articles/my-bash-utilities.html">my bash utilities</a></h2><p>2019-2-10 18:43:44</p></header><h1>My Bash utilities</h1>
+</style><meta name="theme-color" content="#cc0051"></meta><title>bas080.github.io</title></head><body><header class="invert"><h1><a href="/index.html">bas080.github.io</a></h1></header><section class="content"><article><header><h2><a href="/articles">articles</a><span> / </span><a href="/articles/my-bash-utilities.html">my bash utilities</a></h2><p>2/10/2019, 6:43:44 PM</p></header><h1>My Bash utilities</h1>
 <p><a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> has become my go to
 tool for interfacing with my computer. The main reason being that I'm able to
 compose different tools easily and automate tasks I do or should do with
@@ -121,7 +121,7 @@ frequency. I use it for things like:</p>
 which I think are important to run.
 <a href="https://perldoc.perl.org/prove.html">Prove</a> is a lovely tool for doing this.</p></li>
 <li><p>Simplify by standardizing the way I interface with different projects.</p></li>
-<li><p>Automate tasks that would otherwise require lot's of clicking and button
+<li><p>Automate tasks that would otherwise require lots of clicking and button
 pressing.</p></li>
 <li><p>Create tools that enforce a process and improve the quality of projects.</p></li>
 </ul>
@@ -161,20 +161,11 @@ I'm about to touch.</li>
 </ol>
 <p>Projector is one of my most favorite bash tools. I use it daily and without
 really realizing it. It has become part of my Bash experience.</p>
-<h2><a href="https://github.com/bas080/bake">Bake</a></h2>
-<p>Bake is not for you if you are someone that doesn't want to update their bash
-scripts frequently, or does not have to setup a development environment
-frequently and doesn't want to automate their installation of Bash
-dependencies.</p>
-<p>Bake is a good tool for people that do want these things. The project isn't as
-mature as I'd like. I have changed the API several times. I do use it for
-installing all my bash dependencies.</p>
-<p>You might be wondering what Bash dependencies are. Many tools out there require
-you to source some script in your <code>~/.bashrc</code>. Bake tries to make that
-experience a bit nicer by defining a function that gets all your dependencies
-and <code>bake</code>s them into a single file.</p>
-<p>I use bake to source all bash scripts mentioned in this article. I also source
-and keep my <a href="https://github.com/creationix/nvm">nvm</a> and
-<a href="https://github.com/technomancy/leiningen">leiningen</a> scripts up to date with
-bake.</p>
-<h3>Revisions</h3><ul><li><a href="https://github.com/bas080/bas080.github.io/commit/ab521b537b0cf2c2a90974cecda7653be396c48a">2019-2-10 18:43:44 by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/98591924524f5e3811503a70797ec9a55e6609d4">2019-2-10 18:05:56 by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/beaec93648c0d01e5748cfa86dce3fbfa34768b5">2019-2-10 18:03:41 by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/82a0cea46f44eea93af0d5de7d2d936e6c88d142">2019-2-10 17:36:45 by Bas</a></li></ul></article></section><section class="invert footer"><header><h2><a href="/articles">Articles</a></h2></header><article class="article-stats"><header><h3><a href="/articles/minetest.html">minetest</a></h3></header><p>2019-2-10 17:36:45</p></article><article class="article-stats"><header><h3><a href="/articles/introduction.html">introduction</a></h3></header><p>2019-2-10 17:36:45</p></article></section></body></html>
+<h2><a href="https://github.com/bas080/mache">Mache</a></h2>
+<p>A very flexible tool which I use for caching memory/time intensive output.</p>
+<ul>
+<li>I keep my <a href="https://github.com/creationix/nvm">nvm</a> and <a href="https://github.com/technomancy/leiningen">leiningen</a> scripts up to date with mache.</li>
+<li>Sourcing remote bash dependencies with curl.</li>
+<li>Performing certain scripts only when meeting certain criteria.</li>
+</ul>
+<h3>Revisions</h3><ul><li><a href="https://github.com/bas080/bas080.github.io/commit/ab521b537b0cf2c2a90974cecda7653be396c48a">2/10/2019, 6:43:44 PM by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/98591924524f5e3811503a70797ec9a55e6609d4">2/10/2019, 6:05:56 PM by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/beaec93648c0d01e5748cfa86dce3fbfa34768b5">2/10/2019, 6:03:41 PM by Bas Huis</a></li><li><a href="https://github.com/bas080/bas080.github.io/commit/82a0cea46f44eea93af0d5de7d2d936e6c88d142">2/10/2019, 5:36:45 PM by Bas</a></li></ul></article></section><section class="invert footer"><header><h2><a href="/articles">Articles</a></h2></header><article class="article-stats"><header><h3><a href="/articles/minetest.html">minetest</a></h3></header><p>2/10/2019, 5:36:45 PM</p></article><article class="article-stats"><header><h3><a href="/articles/introduction.html">introduction</a></h3></header><p>2/10/2019, 5:36:45 PM</p></article></section></body></html>

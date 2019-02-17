@@ -4,6 +4,7 @@ const castStream = require('./stream-cast')
 
 module.exports = component({
   style: tag('style'),
+  meta: tag('meta'),
   doctype: () => castStream('<!DOCTYPE html>'),
   section: tag('section'),
   main: tag('main'),

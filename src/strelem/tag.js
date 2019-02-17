@@ -11,7 +11,7 @@ const attributesToString = attrs =>
       '').trim()
 
 module.exports = function tag (tag, closeTag) {
-  assert.ok(tag, `Please define a tag: elem(tag)`)
+  assert.ok(tag, 'Please define a tag: elem(tag)')
 
   const open = attrs => isEmpty(attrs)
     ? `<${tag}>`

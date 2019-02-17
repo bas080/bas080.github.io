@@ -1,4 +1,4 @@
-const component = require('./component')
+const component = require('./strelem/svg.js')
 const { times } = require('ramda')
 
 module.exports = component(({ svg, text, g, clipPath, circle, rect, defs }) =>

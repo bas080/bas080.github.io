@@ -34,8 +34,8 @@ const data = json.articles.map(({ id: name }) => {
     file,
     hashes,
     stats: {
-      mtime: hashes.map(prop('date')).reduce(max),
-      ctime: hashes.map(prop('date')).reduce(min)
+      mtime: isEmpty(hashes) ? '' : hashes.map(prop('date')).reduce(max),
+      ctime: isEmpty(hashes) ? '' : hashes.map(prop('date')).reduce(min)
     }
   }
 })

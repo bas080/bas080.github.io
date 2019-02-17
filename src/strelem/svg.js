@@ -1,5 +1,5 @@
-const tag = require('tag')
-const component = require('../component')
+const tag = require('./tag')
+const component = require('./component')
 
 module.exports = component({
   svg: tag('svg'),

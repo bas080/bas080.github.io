@@ -1,9 +1,9 @@
 :root {
   --primary: #cc0051;
-  --background: #131313;
-  --background-lighter: #222;
-  --foreground: #fee;
-  --foreground-subtle: #aaa;
+  --background: #EEE;
+  --background-lighter: #FFF;
+  --foreground: #000;
+  --foreground-subtle: #333;
   --invert-foreground: var(--background);
   --invert-color: var(--background);
 }
@@ -77,8 +77,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
-  text-decoration: underline;
+a:hover {
+  color: var(--foreground) !important;
 }
 
 a:visited {
