@@ -2,8 +2,10 @@
 
 I am Bas. I like **water**, **food**, ***housing*** and ***rest***.
 
-- [github.com/bas080](https://github.com/bas080)
 - [bassimhuis@gmail.com](mailto:bassimhuis@gmail.com)
+- [github.com/bas080](https://github.com/bas080)
+- [linkedin.com/bas080](https://www.linkedin.com/in/bas080)
+- [stackoverflow.com/bas080](https://stackoverflow.com/users/989394/bas080)
 
 ## goal
 
@@ -21,6 +23,7 @@ I am Bas. I like **water**, **food**, ***housing*** and ***rest***.
 
 ## project
 
+- [badmintonpaphos.com](https://badmintonpaphos.com)
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
@@ -65,7 +68,7 @@ echo '
       color: var(--code);
     }
     li {
-      padding: 0.5em 0;
+      padding: 0.2em 0;
     }
 
   </style>
@@ -84,6 +87,6 @@ echo '
 
 ```
 ```
-2023-10-10T15+02:00
+2023-10-10T17+02:00
 ```
 </details>
