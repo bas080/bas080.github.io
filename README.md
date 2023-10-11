@@ -7,19 +7,29 @@ I am Bas. I like **water**, **food**, ***housing*** and ***rest***.
 - [linkedin.com/bas080](https://www.linkedin.com/in/bas080)
 - [stackoverflow.com/bas080](https://stackoverflow.com/users/989394/bas080)
 
+Here are some subjects I update on a weekly basis.
+
+[📰RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
+
 ## goal
 
 1. Become a better badminton player.
-2. Acquire more test automation skills.
-3. Improve public transport.
-4. Keep my worms alive.
+2. Improve public transport.
+3. Keep my worms alive.
+
+## tool
+
+- [nextjs.org](https://nextjs.org)
+- [qwik.builder.io](https://qwik.builder.io)
+- [pa11y.org](https://pa11y.org)
+- [selenium.dev](https://www.selenium.dev/selenium/docs/api/javascript/index.html)
+- [testcafe.io](https://testcafe.io)
+- [leebyron.com/testcheck-js](http://leebyron.com/testcheck-js/)
+- [github.com/maaslalani/slides](https://github.com/maaslalani/slides)
 
 ## like
 
 - [lichess.org](https://lichess.org/)
-- [qwik.builder.io](https://qwik.builder.io/)
-- [leebyron.com/testcheck-js](http://leebyron.com/testcheck-js/)
-- [github.com/maaslalani/slides](https://github.com/maaslalani/slides)
 - [How to with John Wilson](https://www.imdb.com/title/tt10801534/)
 
 ## project
@@ -90,6 +100,6 @@ echo '
 
 ```
 ```
-2023-10-11T11+02:00
+2023-10-11T16+02:00
 ```
 </details>
