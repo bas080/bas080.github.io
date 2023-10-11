@@ -38,6 +38,10 @@ I am Bas.
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
+<p class="align-right">
+[RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
+| [HOME](#)
+</p>
 
 <details class="display-none">
 
@@ -145,7 +149,3 @@ echo '
 ```
 </details>
 
-<p class="align-right">
-  [RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
-| [HOME](#)
-</p>
