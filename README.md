@@ -1,8 +1,8 @@
+<p>Is <a href="https://qwik.builder.io">qwik.builder.io</a> the future of <em>frontend</em> dev?</p>
+
 # whoami
 
 I am Bas.
-
-<iframe src="status.txt" title="status update"></iframe>
 
 - [bassimhuis@gmail.com](mailto:bassimhuis@gmail.com)
 - [github.com/bas080](https://github.com/bas080)
@@ -47,13 +47,17 @@ Build
 This file is created with `markatzea`, `pandoc` and `simplecss`.
 
 ```bash
-test -n "$RECUR" || RECUR=1 markatzea README.mz | tee README.md
+test -n "$RECUR" || {
+
+  pandoc < status.md
+  echo
+  RECUR=1 markatzea README.mz
+} | tee README.md
 
 LANG=en date -Ih
 
 {
-echo '
-<!doctype html>
+echo '<!doctype html>
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
@@ -101,7 +105,31 @@ echo '
 <body>
 <main>
 '
+
 pandoc README.md
+
+echo '<script>'
+
+npx babel -f - --presets=@babel/preset-env <<< '(function () {
+  for (const item of document.getElementsByTagName("h2")) {
+    const id = item.innerText
+
+    item.setAttribute("id", id)
+
+    if (!id) return
+
+    const anchor = document.createElement("a")
+
+    anchor.setAttribute("href", `#${id}`)
+    anchor.innerText = id
+
+    item.innerText = ""
+    item.appendChild(anchor)
+  }
+})();' | npx terser
+
+echo '</script>'
+
 echo '
 </main>
 </body>
@@ -111,7 +139,7 @@ echo '
 
 ```
 ```
-2023-10-11T17+02:00
+2023-10-11T23+02:00
 ```
 </details>
 
