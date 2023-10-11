@@ -38,10 +38,8 @@ I am Bas.
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
-<p class="align-right">
 [RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
 | [HOME](#)
-</p>
 
 <details class="display-none">
 
@@ -84,9 +82,6 @@ echo '<!doctype html>
     body {
       font-family: monospace;
       background-color: var(--accent-bg);
-    }
-    .align-right {
-      text-align: right;
     }
     main {
       overflow-x: hidden;
