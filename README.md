@@ -1,4 +1,6 @@
-<p>Is <a href="https://qwik.builder.io">qwik.builder.io</a> the future of <em>frontend</em> dev?</p>
+Is [qwik.builder.io](https://qwik.builder.io) the future of *frontend* dev?
+
+---
 
 # whoami
 
@@ -38,8 +40,10 @@ I am Bas.
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
-[RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
-| [HOME](#)
+---
+
+[RSS](https://github.com/bas080/bas080.github.io/commits/master.atom) |
+[HOME](#)
 
 <details class="display-none">
 
@@ -52,7 +56,9 @@ This file is created with `markatzea`, `pandoc` and `simplecss`.
 ```bash
 test -n "$RECUR" || {
 
-  pandoc < status.md
+  cat status.md
+  echo
+  echo '---'
   echo
   RECUR=1 markatzea README.mz
 } | tee README.md
