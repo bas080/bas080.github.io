@@ -26,6 +26,7 @@ I am Bas.
 ## like
 
 - [lichess.org](https://lichess.org/)
+- [wikipedia.org/Single-serving_site](https://en.wikipedia.org/wiki/Single-serving_site)
 - [How to with John Wilson](https://www.imdb.com/title/tt10801534/)
 
 ## project
@@ -58,6 +59,7 @@ LANG=en date -Ih
 echo '<!doctype html>
 <html lang="en">
 <head>
+  <title>bas080</title>
   <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🍲&lt;/text&gt;&lt;/svg&gt;"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
