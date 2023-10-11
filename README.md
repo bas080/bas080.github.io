@@ -1,12 +1,13 @@
 # whoami
 
-I am Bas. I like **water**, **food**, ***housing*** and ***rest***.
+I am Bas.
+
+<iframe src="status.txt" title="status update"></iframe>
 
 - [bassimhuis@gmail.com](mailto:bassimhuis@gmail.com)
 - [github.com/bas080](https://github.com/bas080)
 - [linkedin.com/bas080](https://www.linkedin.com/in/bas080)
 - [stackoverflow.com/bas080](https://stackoverflow.com/users/989394/bas080)
-
 
 ## goal
 
@@ -60,6 +61,13 @@ echo '
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <style>
+    iframe {
+      border: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      height: 4em;
+    }
     .display-none {
       display: none;
     }
@@ -93,7 +101,6 @@ echo '
 <body>
 <main>
 '
-
 pandoc README.md
 echo '
 </main>
@@ -104,7 +111,7 @@ echo '
 
 ```
 ```
-2023-10-11T16+02:00
+2023-10-11T17+02:00
 ```
 </details>
 
