@@ -7,9 +7,6 @@ I am Bas. I like **water**, **food**, ***housing*** and ***rest***.
 - [linkedin.com/bas080](https://www.linkedin.com/in/bas080)
 - [stackoverflow.com/bas080](https://stackoverflow.com/users/989394/bas080)
 
-Here are some subjects I update on a weekly basis.
-
-[📰RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
 
 ## goal
 
@@ -39,7 +36,8 @@ Here are some subjects I update on a weekly basis.
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
-<details>
+
+<details class="display-none">
 
 <summary>
 Build
@@ -62,9 +60,15 @@ echo '
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <style>
+    .display-none {
+      display: none;
+    }
     body {
       font-family: monospace;
       background-color: var(--accent-bg);
+    }
+    .align-right {
+      text-align: right;
     }
     main {
       overflow-x: hidden;
@@ -103,3 +107,8 @@ echo '
 2023-10-11T16+02:00
 ```
 </details>
+
+<p class="align-right">
+  [RSS](https://github.com/bas080/bas080.github.io/commits/master.atom)
+| [HOME](#)
+</p>
