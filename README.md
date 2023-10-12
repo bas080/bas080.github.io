@@ -1,4 +1,4 @@
-Is [qwik.builder.io](https://qwik.builder.io) the future of *frontend* dev?
+Remember to freely use and support [adblockplus.org](https://adblockplus.org/).
 
 ---
 
@@ -146,7 +146,7 @@ echo '
 
 ```
 ```
-2023-10-11T23+02:00
+2023-10-12T10+02:00
 ```
 </details>
 

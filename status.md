@@ -1,1 +1,1 @@
-Is [qwik.builder.io](https://qwik.builder.io) the future of *frontend* dev?
+Remember to freely use and support [adblockplus.org](https://adblockplus.org/).
