@@ -52,7 +52,24 @@ This file is created with `markatzea`, `pandoc` and `simplecss`.
 ```bash bash
 test -n "$RECUR" || {
 
+
+  echo '
+  <script>
+    window.addEventListener("popstate", function (event) {
+      var dialog = document.getElementsByTagName("dialog")[0]
+      if (window.location.hash === "#update")
+        dialog.showModal()
+      else
+        dialog.close()
+    });
+  </script>
+  '
+
   cat status.md
+  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖</a>'
+  echo
+  echo
+
   echo
   echo '---'
   echo
@@ -71,12 +88,32 @@ echo '<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <style>
+    .pull-right {
+      float: right;
+    }
     iframe {
       border: none;
       width: 100%;
       padding: 0;
       margin: 0;
       height: 4em;
+    }
+    dialog {
+      font-size: 1.5rem;
+    }
+    dialog h2 {
+      margin-bottom: 0;
+    }
+    dialog h3 {
+      font-size: 1.2rem;
+    }
+    dialog span {
+      font-weight: normal;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+    .color-light {
+      color: var(--text-light);
     }
     .display-none {
       display: none;
@@ -109,6 +146,25 @@ echo '<!doctype html>
 <main>
 '
 
+
+
+echo '<dialog>'
+echo '<a href="#" class="pull-right">Close</a>'
+
+echo '<h2>update</h2>'
+
+{
+  git log --pretty=format:"%H %as" status.md
+  echo
+} | while read -r hash datum; do
+  echo "<h3>Bas Huis <span class='color-light'> · $datum</span></h3>"
+  echo
+  git show "$hash:./status.md"
+  echo
+done | pandoc
+
+echo '</dialog>'
+
 pandoc README.md
 
 echo '<script>'
@@ -139,6 +195,7 @@ echo '
 </html>
 '
 } > index.html
+
 
 ```
 </details>
