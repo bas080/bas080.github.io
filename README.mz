@@ -55,7 +55,7 @@ test -n "$RECUR" || {
   cat status.md
   echo
   echo
-  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖 More Updates</a>'
+  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">View older updates</a>'
   echo
   echo
 
@@ -78,18 +78,28 @@ echo '<!doctype html>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <script>
-    window.addEventListener("popstate", function (event) {
-      var dialog = document.getElementsByTagName("dialog")[0]
-      if (window.location.hash === "#update")
-        dialog.showModal()
-      else
-        dialog.close()
-    });
+    (function() {
+
+      function wow(event) {
+        var dialog = document.getElementsByTagName("dialog")[0]
+        if (window.location.hash.startsWith("#update"))
+          dialog.showModal()
+        else
+          dialog.close()
+      }
+
+      window.addEventListener("popstate", wow);
+      window.addEventListener("DOMContentLoaded", wow);
+
+    })();
   </script>
 
   <style>
     .pull-right {
       float: right;
+    }
+    html:has(dialog[open]:modal) {
+      overflow: hidden;
     }
     iframe {
       border: none;
@@ -106,14 +116,12 @@ echo '<!doctype html>
     }
     dialog h3 {
       font-size: 1.2rem;
+      color: var(--text-light);
     }
     dialog span {
       font-weight: normal;
       margin-top: 0.5rem;
       font-size: 1rem;
-    }
-    .color-light {
-      color: var(--text-light);
     }
     .display-none {
       display: none;
@@ -151,13 +159,13 @@ echo '<!doctype html>
 echo '<dialog>'
 echo '<a href="#" class="pull-right">Close</a>'
 
-echo '<h2>update</h2>'
+echo
 
 {
   git log --pretty=format:"%H %as" status.md
   echo
 } | while read -r hash datum; do
-  echo "<h3>Bas Huis <span class='color-light'> · $datum</span></h3>"
+  echo "<h3 id='update/$datum'> <a href='#update/$datum'>$datum</a></h3>"
   echo
   git show "$hash:./status.md"
   echo
