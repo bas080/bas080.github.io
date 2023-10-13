@@ -1,1 +1,1 @@
-Remember to freely use and support [adblockplus.org](https://adblockplus.org/).
+Great to see [npmjs.com](https://www.npmjs.com/) improve their accessibility.
