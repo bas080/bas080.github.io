@@ -1,5 +1,7 @@
 Great to see [npmjs.com](https://www.npmjs.com/) improve their accessibility.
-<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖</a>
+
+
+<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖 More Updates</a>
 
 
 
@@ -60,7 +62,9 @@ This file is created with `markatzea`, `pandoc` and `simplecss`.
 test -n "$RECUR" || {
 
   cat status.md
-  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖</a>'
+  echo
+  echo
+  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖 More Updates</a>'
   echo
   echo
 

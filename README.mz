@@ -53,7 +53,9 @@ This file is created with `markatzea`, `pandoc` and `simplecss`.
 test -n "$RECUR" || {
 
   cat status.md
-  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖</a>'
+  echo
+  echo
+  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">🗖 More Updates</a>'
   echo
   echo
 
