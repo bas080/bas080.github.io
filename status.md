@@ -1,1 +1,3 @@
-Great to see [npmjs.com](https://www.npmjs.com/) improve their accessibility.
+> "The old law of an [eye for an eye](https://en.wikipedia.org/wiki/Eye_for_an_eye) leaves everyone blind."
+>
+> &mdash; <cite>Coretta Scott King</cite>
