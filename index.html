@@ -81,11 +81,18 @@
   </style>
 </head>
 <body>
-<main>
+<main role="article">
 
 <dialog>
 <a href="#" class="pull-right">Close</a>
 
+<h3 id="update/2023-10-18">
+<a href='#update/2023-10-18'>2023-10-18</a>
+</h3>
+<blockquote>
+<p>“The old law of an <a href="https://en.wikipedia.org/wiki/Eye_for_an_eye">eye for an eye</a> leaves everyone blind.”</p>
+<p>— <cite>Coretta Scott King</cite></p>
+</blockquote>
 <h3 id="update/2023-10-13">
 <a href='#update/2023-10-13'>2023-10-13</a>
 </h3>
@@ -131,6 +138,7 @@
 </ul>
 <h2 id="like">like</h2>
 <ul>
+<li><a href="https://www.minetest.net/">minetest.net</a></li>
 <li><a href="https://lichess.org/">lichess.org</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Single-serving_site">wikipedia.org/Single-serving_site</a></li>
 <li><a href="https://www.imdb.com/title/tt10801534/">How to with John Wilson</a></li>
@@ -248,7 +256,7 @@
 <a class="sourceLine" id="cb1-99" title="99"><span class="st">  &lt;/style&gt;</span></a>
 <a class="sourceLine" id="cb1-100" title="100"><span class="st">&lt;/head&gt;</span></a>
 <a class="sourceLine" id="cb1-101" title="101"><span class="st">&lt;body&gt;</span></a>
-<a class="sourceLine" id="cb1-102" title="102"><span class="st">&lt;main&gt;</span></a>
+<a class="sourceLine" id="cb1-102" title="102"><span class="st">&lt;main role=&quot;article&quot;&gt;</span></a>
 <a class="sourceLine" id="cb1-103" title="103"><span class="st">&#39;</span></a>
 <a class="sourceLine" id="cb1-104" title="104"></a>
 <a class="sourceLine" id="cb1-105" title="105"></a>
@@ -301,8 +309,31 @@
 <a class="sourceLine" id="cb1-152" title="152"><span class="st">&#39;</span></a>
 <a class="sourceLine" id="cb1-153" title="153"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
 <a class="sourceLine" id="cb1-154" title="154"></a></code></pre></div>
-<pre><code>2023-10-18T00+02:00</code></pre>
+<pre><code>2023-10-22T01+02:00</code></pre>
 </details>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
+<a class="sourceLine" id="cb3-3" title="3">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="bu">echo</span> <span class="st">&quot;&lt;h1 id=&#39;update/</span><span class="va">$datum</span><span class="st">&#39;&gt;Bas080 &lt;a href=&#39;#update/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h1&gt;&quot;</span></a>
+<a class="sourceLine" id="cb3-6" title="6">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb3-7" title="7">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="kw">done</span></a></code></pre></div>
+<pre><code>&lt;h1 id=&#39;update/2023-10-18&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-18&#39;&gt;2023-10-18&lt;/a&gt;&lt;/h1&gt;
+
+&gt; &quot;The old law of an [eye for an eye](https://en.wikipedia.org/wiki/Eye_for_an_eye) leaves everyone blind.&quot;
+&gt;
+&gt; &amp;mdash; &lt;cite&gt;Coretta Scott King&lt;/cite&gt;
+&lt;h1 id=&#39;update/2023-10-13&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-13&#39;&gt;2023-10-13&lt;/a&gt;&lt;/h1&gt;
+
+Great to see [npmjs.com](https://www.npmjs.com/) improve their accessibility.
+&lt;h1 id=&#39;update/2023-10-12&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-12&#39;&gt;2023-10-12&lt;/a&gt;&lt;/h1&gt;
+
+Remember to freely use and support [adblockplus.org](https://adblockplus.org/).
+&lt;h1 id=&#39;update/2023-10-11&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-11&#39;&gt;2023-10-11&lt;/a&gt;&lt;/h1&gt;
+
+Is [qwik.builder.io](https://qwik.builder.io) the future of *frontend* dev?</code></pre>
 <script>
 "use strict";function _createForOfIteratorHelper(o,allowArrayLike){var it=typeof Symbol!=="undefined"&&o[Symbol.iterator]||o["@@iterator"];if(!it){if(Array.isArray(o)||(it=_unsupportedIterableToArray(o))||allowArrayLike&&o&&typeof o.length==="number"){if(it)o=it;var i=0;var F=function F(){};return{s:F,n:function n(){if(i>=o.length)return{done:true};return{done:false,value:o[i++]}},e:function e(_e){throw _e},f:F}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var normalCompletion=true,didErr=false,err;return{s:function s(){it=it.call(o)},n:function n(){var step=it.next();normalCompletion=step.done;return step},e:function e(_e2){didErr=true;err=_e2},f:function f(){try{if(!normalCompletion&&it["return"]!=null)it["return"]()}finally{if(didErr)throw err}}}}function _unsupportedIterableToArray(o,minLen){if(!o)return;if(typeof o==="string")return _arrayLikeToArray(o,minLen);var n=Object.prototype.toString.call(o).slice(8,-1);if(n==="Object"&&o.constructor)n=o.constructor.name;if(n==="Map"||n==="Set")return Array.from(o);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return _arrayLikeToArray(o,minLen)}function _arrayLikeToArray(arr,len){if(len==null||len>arr.length)len=arr.length;for(var i=0,arr2=new Array(len);i<len;i++)arr2[i]=arr[i];return arr2}(function(){var _iterator=_createForOfIteratorHelper(document.getElementsByTagName("h2")),_step;try{for(_iterator.s();!(_step=_iterator.n()).done;){var item=_step.value;var id=item.innerText;item.setAttribute("id",id);if(!id)return;var anchor=document.createElement("a");anchor.setAttribute("href","#".concat(id));anchor.innerText=id;item.innerText="";item.appendChild(anchor)}}catch(err){_iterator.e(err)}finally{_iterator.f()}})();
 </script>

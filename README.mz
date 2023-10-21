@@ -25,6 +25,7 @@ I am Bas.
 
 ## like
 
+- [minetest.net](https://www.minetest.net/)
 - [lichess.org](https://lichess.org/)
 - [wikipedia.org/Single-serving_site](https://en.wikipedia.org/wiki/Single-serving_site)
 - [How to with John Wilson](https://www.imdb.com/title/tt10801534/)
@@ -151,7 +152,7 @@ echo '<!doctype html>
   </style>
 </head>
 <body>
-<main>
+<main role="article">
 '
 
 
@@ -208,3 +209,15 @@ echo '
 ```
 </details>
 
+
+```bash bash
+{
+  git log --pretty=format:"%H %as" status.md
+  echo
+} | while read -r hash datum; do
+  echo "<h1 id='update/$datum'>Bas080 <a href='#update/$datum'>$datum</a></h1>"
+  echo
+  git show "$hash:./status.md"
+
+done
+```
