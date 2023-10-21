@@ -163,7 +163,7 @@ echo '<!doctype html>
   </style>
 </head>
 <body>
-<main role="article">
+<main>
 '
 
 
@@ -185,7 +185,11 @@ done | pandoc
 
 echo '</dialog>'
 
+echo '<div role="article">'
+
 pandoc README.md
+
+echo '</div>'
 
 echo '<script>'
 
@@ -223,31 +227,3 @@ echo '
 ```
 </details>
 
-
-```bash
-{
-  git log --pretty=format:"%H %as" status.md
-  echo
-} | while read -r hash datum; do
-  echo "<h1 id='update/$datum'>Bas080 <a href='#update/$datum'>$datum</a></h1>"
-  echo
-  git show "$hash:./status.md"
-
-done
-```
-```
-<h1 id='update/2023-10-18'>Bas080 <a href='#update/2023-10-18'>2023-10-18</a></h1>
-
-> "The old law of an [eye for an eye](https://en.wikipedia.org/wiki/Eye_for_an_eye) leaves everyone blind."
->
-> &mdash; <cite>Coretta Scott King</cite>
-<h1 id='update/2023-10-13'>Bas080 <a href='#update/2023-10-13'>2023-10-13</a></h1>
-
-Great to see [npmjs.com](https://www.npmjs.com/) improve their accessibility.
-<h1 id='update/2023-10-12'>Bas080 <a href='#update/2023-10-12'>2023-10-12</a></h1>
-
-Remember to freely use and support [adblockplus.org](https://adblockplus.org/).
-<h1 id='update/2023-10-11'>Bas080 <a href='#update/2023-10-11'>2023-10-11</a></h1>
-
-Is [qwik.builder.io](https://qwik.builder.io) the future of *frontend* dev?
-```

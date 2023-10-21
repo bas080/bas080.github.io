@@ -81,7 +81,7 @@
   </style>
 </head>
 <body>
-<main role="article">
+<main>
 
 <dialog>
 <a href="#" class="pull-right">Close</a>
@@ -106,6 +106,7 @@
 </h3>
 <p>Is <a href="https://qwik.builder.io">qwik.builder.io</a> the future of <em>frontend</em> dev?</p>
 </dialog>
+<div role="article">
 <blockquote>
 <p>“The old law of an <a href="https://en.wikipedia.org/wiki/Eye_for_an_eye">eye for an eye</a> leaves everyone blind.”</p>
 <p>— <cite>Coretta Scott King</cite></p>
@@ -256,7 +257,7 @@
 <a class="sourceLine" id="cb1-99" title="99"><span class="st">  &lt;/style&gt;</span></a>
 <a class="sourceLine" id="cb1-100" title="100"><span class="st">&lt;/head&gt;</span></a>
 <a class="sourceLine" id="cb1-101" title="101"><span class="st">&lt;body&gt;</span></a>
-<a class="sourceLine" id="cb1-102" title="102"><span class="st">&lt;main role=&quot;article&quot;&gt;</span></a>
+<a class="sourceLine" id="cb1-102" title="102"><span class="st">&lt;main&gt;</span></a>
 <a class="sourceLine" id="cb1-103" title="103"><span class="st">&#39;</span></a>
 <a class="sourceLine" id="cb1-104" title="104"></a>
 <a class="sourceLine" id="cb1-105" title="105"></a>
@@ -278,62 +279,44 @@
 <a class="sourceLine" id="cb1-121" title="121"></a>
 <a class="sourceLine" id="cb1-122" title="122"><span class="bu">echo</span> <span class="st">&#39;&lt;/dialog&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-123" title="123"></a>
-<a class="sourceLine" id="cb1-124" title="124"><span class="ex">pandoc</span> README.md</a>
+<a class="sourceLine" id="cb1-124" title="124"><span class="bu">echo</span> <span class="st">&#39;&lt;div role=&quot;article&quot;&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-125" title="125"></a>
-<a class="sourceLine" id="cb1-126" title="126"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-126" title="126"><span class="ex">pandoc</span> README.md</a>
 <a class="sourceLine" id="cb1-127" title="127"></a>
-<a class="sourceLine" id="cb1-128" title="128"><span class="ex">npx</span> babel -f - --presets=@babel/preset-env <span class="op">&lt;&lt;&lt;</span> <span class="st">&#39;(function () {</span></a>
-<a class="sourceLine" id="cb1-129" title="129"><span class="st">  for (const item of document.getElementsByTagName(&quot;h2&quot;)) {</span></a>
-<a class="sourceLine" id="cb1-130" title="130"><span class="st">    const id = item.innerText</span></a>
+<a class="sourceLine" id="cb1-128" title="128"><span class="bu">echo</span> <span class="st">&#39;&lt;/div&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-129" title="129"></a>
+<a class="sourceLine" id="cb1-130" title="130"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-131" title="131"></a>
-<a class="sourceLine" id="cb1-132" title="132"><span class="st">    item.setAttribute(&quot;id&quot;, id)</span></a>
-<a class="sourceLine" id="cb1-133" title="133"></a>
-<a class="sourceLine" id="cb1-134" title="134"><span class="st">    if (!id) return</span></a>
+<a class="sourceLine" id="cb1-132" title="132"><span class="ex">npx</span> babel -f - --presets=@babel/preset-env <span class="op">&lt;&lt;&lt;</span> <span class="st">&#39;(function () {</span></a>
+<a class="sourceLine" id="cb1-133" title="133"><span class="st">  for (const item of document.getElementsByTagName(&quot;h2&quot;)) {</span></a>
+<a class="sourceLine" id="cb1-134" title="134"><span class="st">    const id = item.innerText</span></a>
 <a class="sourceLine" id="cb1-135" title="135"></a>
-<a class="sourceLine" id="cb1-136" title="136"><span class="st">    const anchor = document.createElement(&quot;a&quot;)</span></a>
+<a class="sourceLine" id="cb1-136" title="136"><span class="st">    item.setAttribute(&quot;id&quot;, id)</span></a>
 <a class="sourceLine" id="cb1-137" title="137"></a>
-<a class="sourceLine" id="cb1-138" title="138"><span class="st">    anchor.setAttribute(&quot;href&quot;, `#${id}`)</span></a>
-<a class="sourceLine" id="cb1-139" title="139"><span class="st">    anchor.innerText = id</span></a>
-<a class="sourceLine" id="cb1-140" title="140"></a>
-<a class="sourceLine" id="cb1-141" title="141"><span class="st">    item.innerText = &quot;&quot;</span></a>
-<a class="sourceLine" id="cb1-142" title="142"><span class="st">    item.appendChild(anchor)</span></a>
-<a class="sourceLine" id="cb1-143" title="143"><span class="st">  }</span></a>
-<a class="sourceLine" id="cb1-144" title="144"><span class="st">})();&#39;</span> <span class="kw">|</span> <span class="ex">npx</span> terser</a>
-<a class="sourceLine" id="cb1-145" title="145"></a>
-<a class="sourceLine" id="cb1-146" title="146"><span class="bu">echo</span> <span class="st">&#39;&lt;/script&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-147" title="147"></a>
-<a class="sourceLine" id="cb1-148" title="148"><span class="bu">echo</span> <span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-149" title="149"><span class="st">&lt;/main&gt;</span></a>
-<a class="sourceLine" id="cb1-150" title="150"><span class="st">&lt;/body&gt;</span></a>
-<a class="sourceLine" id="cb1-151" title="151"><span class="st">&lt;/html&gt;</span></a>
-<a class="sourceLine" id="cb1-152" title="152"><span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-153" title="153"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
-<a class="sourceLine" id="cb1-154" title="154"></a></code></pre></div>
+<a class="sourceLine" id="cb1-138" title="138"><span class="st">    if (!id) return</span></a>
+<a class="sourceLine" id="cb1-139" title="139"></a>
+<a class="sourceLine" id="cb1-140" title="140"><span class="st">    const anchor = document.createElement(&quot;a&quot;)</span></a>
+<a class="sourceLine" id="cb1-141" title="141"></a>
+<a class="sourceLine" id="cb1-142" title="142"><span class="st">    anchor.setAttribute(&quot;href&quot;, `#${id}`)</span></a>
+<a class="sourceLine" id="cb1-143" title="143"><span class="st">    anchor.innerText = id</span></a>
+<a class="sourceLine" id="cb1-144" title="144"></a>
+<a class="sourceLine" id="cb1-145" title="145"><span class="st">    item.innerText = &quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-146" title="146"><span class="st">    item.appendChild(anchor)</span></a>
+<a class="sourceLine" id="cb1-147" title="147"><span class="st">  }</span></a>
+<a class="sourceLine" id="cb1-148" title="148"><span class="st">})();&#39;</span> <span class="kw">|</span> <span class="ex">npx</span> terser</a>
+<a class="sourceLine" id="cb1-149" title="149"></a>
+<a class="sourceLine" id="cb1-150" title="150"><span class="bu">echo</span> <span class="st">&#39;&lt;/script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-151" title="151"></a>
+<a class="sourceLine" id="cb1-152" title="152"><span class="bu">echo</span> <span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-153" title="153"><span class="st">&lt;/main&gt;</span></a>
+<a class="sourceLine" id="cb1-154" title="154"><span class="st">&lt;/body&gt;</span></a>
+<a class="sourceLine" id="cb1-155" title="155"><span class="st">&lt;/html&gt;</span></a>
+<a class="sourceLine" id="cb1-156" title="156"><span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-157" title="157"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
+<a class="sourceLine" id="cb1-158" title="158"></a></code></pre></div>
 <pre><code>2023-10-22T01+02:00</code></pre>
 </details>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">{</span></a>
-<a class="sourceLine" id="cb3-2" title="2">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
-<a class="sourceLine" id="cb3-3" title="3">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
-<a class="sourceLine" id="cb3-5" title="5">  <span class="bu">echo</span> <span class="st">&quot;&lt;h1 id=&#39;update/</span><span class="va">$datum</span><span class="st">&#39;&gt;Bas080 &lt;a href=&#39;#update/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h1&gt;&quot;</span></a>
-<a class="sourceLine" id="cb3-6" title="6">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb3-7" title="7">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
-<a class="sourceLine" id="cb3-8" title="8"></a>
-<a class="sourceLine" id="cb3-9" title="9"><span class="kw">done</span></a></code></pre></div>
-<pre><code>&lt;h1 id=&#39;update/2023-10-18&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-18&#39;&gt;2023-10-18&lt;/a&gt;&lt;/h1&gt;
-
-&gt; &quot;The old law of an [eye for an eye](https://en.wikipedia.org/wiki/Eye_for_an_eye) leaves everyone blind.&quot;
-&gt;
-&gt; &amp;mdash; &lt;cite&gt;Coretta Scott King&lt;/cite&gt;
-&lt;h1 id=&#39;update/2023-10-13&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-13&#39;&gt;2023-10-13&lt;/a&gt;&lt;/h1&gt;
-
-Great to see [npmjs.com](https://www.npmjs.com/) improve their accessibility.
-&lt;h1 id=&#39;update/2023-10-12&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-12&#39;&gt;2023-10-12&lt;/a&gt;&lt;/h1&gt;
-
-Remember to freely use and support [adblockplus.org](https://adblockplus.org/).
-&lt;h1 id=&#39;update/2023-10-11&#39;&gt;Bas080 &lt;a href=&#39;#update/2023-10-11&#39;&gt;2023-10-11&lt;/a&gt;&lt;/h1&gt;
-
-Is [qwik.builder.io](https://qwik.builder.io) the future of *frontend* dev?</code></pre>
+</div>
 <script>
 "use strict";function _createForOfIteratorHelper(o,allowArrayLike){var it=typeof Symbol!=="undefined"&&o[Symbol.iterator]||o["@@iterator"];if(!it){if(Array.isArray(o)||(it=_unsupportedIterableToArray(o))||allowArrayLike&&o&&typeof o.length==="number"){if(it)o=it;var i=0;var F=function F(){};return{s:F,n:function n(){if(i>=o.length)return{done:true};return{done:false,value:o[i++]}},e:function e(_e){throw _e},f:F}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var normalCompletion=true,didErr=false,err;return{s:function s(){it=it.call(o)},n:function n(){var step=it.next();normalCompletion=step.done;return step},e:function e(_e2){didErr=true;err=_e2},f:function f(){try{if(!normalCompletion&&it["return"]!=null)it["return"]()}finally{if(didErr)throw err}}}}function _unsupportedIterableToArray(o,minLen){if(!o)return;if(typeof o==="string")return _arrayLikeToArray(o,minLen);var n=Object.prototype.toString.call(o).slice(8,-1);if(n==="Object"&&o.constructor)n=o.constructor.name;if(n==="Map"||n==="Set")return Array.from(o);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return _arrayLikeToArray(o,minLen)}function _arrayLikeToArray(arr,len){if(len==null||len>arr.length)len=arr.length;for(var i=0,arr2=new Array(len);i<len;i++)arr2[i]=arr[i];return arr2}(function(){var _iterator=_createForOfIteratorHelper(document.getElementsByTagName("h2")),_step;try{for(_iterator.s();!(_step=_iterator.n()).done;){var item=_step.value;var id=item.innerText;item.setAttribute("id",id);if(!id)return;var anchor=document.createElement("a");anchor.setAttribute("href","#".concat(id));anchor.innerText=id;item.innerText="";item.appendChild(anchor)}}catch(err){_iterator.e(err)}finally{_iterator.f()}})();
 </script>

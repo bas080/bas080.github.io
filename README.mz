@@ -152,7 +152,7 @@ echo '<!doctype html>
   </style>
 </head>
 <body>
-<main role="article">
+<main>
 '
 
 
@@ -174,7 +174,11 @@ done | pandoc
 
 echo '</dialog>'
 
+echo '<div role="article">'
+
 pandoc README.md
+
+echo '</div>'
 
 echo '<script>'
 
@@ -209,15 +213,3 @@ echo '
 ```
 </details>
 
-
-```bash bash
-{
-  git log --pretty=format:"%H %as" status.md
-  echo
-} | while read -r hash datum; do
-  echo "<h1 id='update/$datum'>Bas080 <a href='#update/$datum'>$datum</a></h1>"
-  echo
-  git show "$hash:./status.md"
-
-done
-```
