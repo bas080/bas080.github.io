@@ -174,11 +174,11 @@ done | pandoc
 
 echo '</dialog>'
 
-echo '<div role="article">'
+echo '<article>'
 
 pandoc README.md
 
-echo '</div>'
+echo '</article>'
 
 echo '<script>'
 

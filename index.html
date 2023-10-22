@@ -106,7 +106,7 @@
 </h3>
 <p>Is <a href="https://qwik.builder.io">qwik.builder.io</a> the future of <em>frontend</em> dev?</p>
 </dialog>
-<div role="article">
+<article>
 <blockquote>
 <p>“The old law of an <a href="https://en.wikipedia.org/wiki/Eye_for_an_eye">eye for an eye</a> leaves everyone blind.”</p>
 <p>— <cite>Coretta Scott King</cite></p>
@@ -279,11 +279,11 @@
 <a class="sourceLine" id="cb1-121" title="121"></a>
 <a class="sourceLine" id="cb1-122" title="122"><span class="bu">echo</span> <span class="st">&#39;&lt;/dialog&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-123" title="123"></a>
-<a class="sourceLine" id="cb1-124" title="124"><span class="bu">echo</span> <span class="st">&#39;&lt;div role=&quot;article&quot;&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-124" title="124"><span class="bu">echo</span> <span class="st">&#39;&lt;article&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-125" title="125"></a>
 <a class="sourceLine" id="cb1-126" title="126"><span class="ex">pandoc</span> README.md</a>
 <a class="sourceLine" id="cb1-127" title="127"></a>
-<a class="sourceLine" id="cb1-128" title="128"><span class="bu">echo</span> <span class="st">&#39;&lt;/div&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-128" title="128"><span class="bu">echo</span> <span class="st">&#39;&lt;/article&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-129" title="129"></a>
 <a class="sourceLine" id="cb1-130" title="130"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-131" title="131"></a>
@@ -314,9 +314,9 @@
 <a class="sourceLine" id="cb1-156" title="156"><span class="st">&#39;</span></a>
 <a class="sourceLine" id="cb1-157" title="157"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
 <a class="sourceLine" id="cb1-158" title="158"></a></code></pre></div>
-<pre><code>2023-10-22T01+02:00</code></pre>
+<pre><code>2023-10-22T02+02:00</code></pre>
 </details>
-</div>
+</article>
 <script>
 "use strict";function _createForOfIteratorHelper(o,allowArrayLike){var it=typeof Symbol!=="undefined"&&o[Symbol.iterator]||o["@@iterator"];if(!it){if(Array.isArray(o)||(it=_unsupportedIterableToArray(o))||allowArrayLike&&o&&typeof o.length==="number"){if(it)o=it;var i=0;var F=function F(){};return{s:F,n:function n(){if(i>=o.length)return{done:true};return{done:false,value:o[i++]}},e:function e(_e){throw _e},f:F}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var normalCompletion=true,didErr=false,err;return{s:function s(){it=it.call(o)},n:function n(){var step=it.next();normalCompletion=step.done;return step},e:function e(_e2){didErr=true;err=_e2},f:function f(){try{if(!normalCompletion&&it["return"]!=null)it["return"]()}finally{if(didErr)throw err}}}}function _unsupportedIterableToArray(o,minLen){if(!o)return;if(typeof o==="string")return _arrayLikeToArray(o,minLen);var n=Object.prototype.toString.call(o).slice(8,-1);if(n==="Object"&&o.constructor)n=o.constructor.name;if(n==="Map"||n==="Set")return Array.from(o);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return _arrayLikeToArray(o,minLen)}function _arrayLikeToArray(arr,len){if(len==null||len>arr.length)len=arr.length;for(var i=0,arr2=new Array(len);i<len;i++)arr2[i]=arr[i];return arr2}(function(){var _iterator=_createForOfIteratorHelper(document.getElementsByTagName("h2")),_step;try{for(_iterator.s();!(_step=_iterator.n()).done;){var item=_step.value;var id=item.innerText;item.setAttribute("id",id);if(!id)return;var anchor=document.createElement("a");anchor.setAttribute("href","#".concat(id));anchor.innerText=id;item.innerText="";item.appendChild(anchor)}}catch(err){_iterator.e(err)}finally{_iterator.f()}})();
 </script>

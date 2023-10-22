@@ -185,11 +185,11 @@ done | pandoc
 
 echo '</dialog>'
 
-echo '<div role="article">'
+echo '<article>'
 
 pandoc README.md
 
-echo '</div>'
+echo '</article>'
 
 echo '<script>'
 
@@ -223,7 +223,7 @@ echo '
 
 ```
 ```
-2023-10-22T01+02:00
+2023-10-22T02+02:00
 ```
 </details>
 
