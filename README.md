@@ -1,6 +1,5 @@
-> "The old law of an [eye for an eye](https://en.wikipedia.org/wiki/Eye_for_an_eye) leaves everyone blind."
->
-> &mdash; <cite>Coretta Scott King</cite>
+[htmx.org](https://htmx.org/) seems like a great idea. However, the frontend
+routing story is lacking.
 
 
 <a href="#update" title="View Status Updates" aria-label="View Status Updates">View older updates</a>
@@ -223,7 +222,7 @@ echo '
 
 ```
 ```
-2023-10-22T02+02:00
+2023-10-23T14+02:00
 ```
 </details>
 
