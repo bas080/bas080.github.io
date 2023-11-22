@@ -1,12 +1,10 @@
+# Status
+
 [htmx.org](https://htmx.org/) seems like a great idea. However, the frontend
 routing story is lacking.
 
 
-<a href="#update" title="View Status Updates" aria-label="View Status Updates">View older updates</a>
-
-
-
----
+<a href="#update">View older updates</a>
 
 # whoami
 
@@ -63,16 +61,14 @@ This file is created with `markatzea`, `pandoc` and `simplecss`.
 ```bash
 test -n "$RECUR" || {
 
+  echo '# Status'
+  echo
   cat status.md
   echo
   echo
-  echo '<a href="#update" title="View Status Updates" aria-label="View Status Updates">View older updates</a>'
-  echo
+  echo '<a href="#update">View older updates</a>'
   echo
 
-  echo
-  echo '---'
-  echo
   RECUR=1 markatzea README.mz
 } | tee README.md
 
@@ -83,7 +79,6 @@ echo '<!doctype html>
 <html lang="en">
 <head>
   <title>bas080</title>
-  <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🍲&lt;/text&gt;&lt;/svg&gt;"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,57 +101,117 @@ echo '<!doctype html>
   </script>
 
   <style>
+
+
+    :root, ::backdrop {
+        --bg: #fff;
+        --accent-bg: #f5f7ff;
+        --text: #212121;
+        --text-light: #585858;
+        --border: #898EA4;
+        --accent: darkmagenta;
+        --code: #d81b60;
+        --preformatted: #444;
+        --marked: #ffdd33;
+        --disabled: #efefef;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root, ::backdrop {
+          color-scheme: dark;
+          --bg: #212121;
+          --accent-bg: #2b2b2b;
+          --text: #dcdcdc;
+          --text-light: #ababab;
+          --accent: deepskyblue;
+          --code: #f06292;
+          --preformatted: #ccc;
+          --disabled: #111;
+      }
+    }
+
+
+    a {
+        text-decoration: none;
+        color: var(--accent);
+    }
+
+
+    hr {
+        margin: 2em 0;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    body {
+      margin: 5vw;
+      font-family: monospace;
+      color: var(--text);
+      background-color: var(--bg);
+      font-size: 150%;
+    }
+
+
+    h2, h3 {
+        font-weight: normal;
+    }
+
+    h1, h2, h3 {
+      font-size: 1em;
+    }
+
+    h1 a, h2 a, h3 a {
+      background-color: var(--text);
+      color: var(--bg);
+      padding: 0 1ex;
+      display: inline;
+    }
+
+    h2 a, h3 a {
+      color: var(--bg) !important;
+    }
+
+    a:hover, :focus {
+      background-color: var(--text);
+      color: var(--bg);
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+
+
+    article {
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    dialog {
+        background-color: var(--bg);
+        border: 1px solid var(--border);
+    }
+
     .pull-right {
       float: right;
     }
     html:has(dialog[open]:modal) {
       overflow: hidden;
     }
-    iframe {
-      border: none;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      height: 4em;
-    }
-    dialog {
-      font-size: 1.5rem;
-    }
-    dialog h2 {
-      margin-bottom: 0;
-    }
-    dialog h3 {
-      font-size: 1.2rem;
-      color: var(--text-light);
-    }
     dialog span {
       font-weight: normal;
       margin-top: 0.5rem;
-      font-size: 1rem;
     }
     .display-none {
       display: none;
     }
-    body {
-      font-family: monospace;
-      background-color: var(--accent-bg);
-    }
     main {
       overflow-x: hidden;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      padding: 2vw;
-      background-color: var(--bg);
-      box-shadow: 0.5em 0.5em var(--disabled);
     }
     ul {
       padding: 0 1em;
     }
-    h1 {
-      color: var(--code);
-    }
     li {
-      padding: 0.2em 0;
+      padding: 0.5em 0;
     }
 
   </style>
@@ -172,11 +227,13 @@ echo '<a href="#" class="pull-right">Close</a>'
 
 echo
 
+echo '<h1>update</h1>'
+
 {
   git log --pretty=format:"%H %as" status.md
   echo
 } | while read -r hash datum; do
-  echo "<h3 id='update/$datum'> <a href='#update/$datum'>$datum</a></h3>"
+  echo "<h2 id='update/$datum'><a href='#update/$datum'>$datum</a></h2>"
   echo
   git show "$hash:./status.md"
   echo
@@ -193,7 +250,11 @@ echo '</article>'
 echo '<script>'
 
 npx babel -f - --presets=@babel/preset-env <<< '(function () {
-  for (const item of document.getElementsByTagName("h2")) {
+  for (const item of document.querySelectorAll("h1,h2,h3")) {
+
+    if (item.children.length !== 0) continue
+    // if (item.childNodes[0].nodeType !== item.TEXT_NODE) continue
+
     const id = item.innerText
 
     item.setAttribute("id", id)
@@ -222,7 +283,7 @@ echo '
 
 ```
 ```
-2023-10-23T14+02:00
+2023-11-22T21+01:00
 ```
 </details>
 
