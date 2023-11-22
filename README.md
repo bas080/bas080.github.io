@@ -173,9 +173,11 @@ echo '<!doctype html>
       color: var(--bg) !important;
     }
 
-    a:hover, :focus {
-      background-color: var(--text);
-      color: var(--bg);
+    a:hover {
+      text-decoration: underline;
+    }
+
+    :focus {
       outline: 2px solid var(--text);
       outline-offset: 2px;
     }
@@ -283,7 +285,7 @@ echo '
 
 ```
 ```
-2023-11-22T21+01:00
+2023-11-22T22+01:00
 ```
 </details>
 

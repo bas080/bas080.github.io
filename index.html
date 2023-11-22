@@ -96,9 +96,11 @@
       color: var(--bg) !important;
     }
 
-    a:hover, :focus {
-      background-color: var(--text);
-      color: var(--bg);
+    a:hover {
+      text-decoration: underline;
+    }
+
+    :focus {
       outline: 2px solid var(--text);
       outline-offset: 2px;
     }
@@ -331,114 +333,116 @@
 <a class="sourceLine" id="cb1-112" title="112"><span class="st">      color: var(--bg) !important;</span></a>
 <a class="sourceLine" id="cb1-113" title="113"><span class="st">    }</span></a>
 <a class="sourceLine" id="cb1-114" title="114"></a>
-<a class="sourceLine" id="cb1-115" title="115"><span class="st">    a:hover, :focus {</span></a>
-<a class="sourceLine" id="cb1-116" title="116"><span class="st">      background-color: var(--text);</span></a>
-<a class="sourceLine" id="cb1-117" title="117"><span class="st">      color: var(--bg);</span></a>
-<a class="sourceLine" id="cb1-118" title="118"><span class="st">      outline: 2px solid var(--text);</span></a>
-<a class="sourceLine" id="cb1-119" title="119"><span class="st">      outline-offset: 2px;</span></a>
-<a class="sourceLine" id="cb1-120" title="120"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-121" title="121"></a>
-<a class="sourceLine" id="cb1-122" title="122"></a>
-<a class="sourceLine" id="cb1-123" title="123"><span class="st">    article {</span></a>
-<a class="sourceLine" id="cb1-124" title="124"><span class="st">        margin: 0;</span></a>
-<a class="sourceLine" id="cb1-125" title="125"><span class="st">        padding: 0.5em;</span></a>
-<a class="sourceLine" id="cb1-126" title="126"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-127" title="127"></a>
-<a class="sourceLine" id="cb1-128" title="128"><span class="st">    dialog {</span></a>
-<a class="sourceLine" id="cb1-129" title="129"><span class="st">        background-color: var(--bg);</span></a>
-<a class="sourceLine" id="cb1-130" title="130"><span class="st">        border: 1px solid var(--border);</span></a>
-<a class="sourceLine" id="cb1-131" title="131"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-132" title="132"></a>
-<a class="sourceLine" id="cb1-133" title="133"><span class="st">    .pull-right {</span></a>
-<a class="sourceLine" id="cb1-134" title="134"><span class="st">      float: right;</span></a>
-<a class="sourceLine" id="cb1-135" title="135"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-136" title="136"><span class="st">    html:has(dialog[open]:modal) {</span></a>
-<a class="sourceLine" id="cb1-137" title="137"><span class="st">      overflow: hidden;</span></a>
-<a class="sourceLine" id="cb1-138" title="138"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-139" title="139"><span class="st">    dialog span {</span></a>
-<a class="sourceLine" id="cb1-140" title="140"><span class="st">      font-weight: normal;</span></a>
-<a class="sourceLine" id="cb1-141" title="141"><span class="st">      margin-top: 0.5rem;</span></a>
-<a class="sourceLine" id="cb1-142" title="142"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-143" title="143"><span class="st">    .display-none {</span></a>
-<a class="sourceLine" id="cb1-144" title="144"><span class="st">      display: none;</span></a>
-<a class="sourceLine" id="cb1-145" title="145"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-146" title="146"><span class="st">    main {</span></a>
-<a class="sourceLine" id="cb1-147" title="147"><span class="st">      overflow-x: hidden;</span></a>
-<a class="sourceLine" id="cb1-148" title="148"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-149" title="149"><span class="st">    ul {</span></a>
-<a class="sourceLine" id="cb1-150" title="150"><span class="st">      padding: 0 1em;</span></a>
-<a class="sourceLine" id="cb1-151" title="151"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-152" title="152"><span class="st">    li {</span></a>
-<a class="sourceLine" id="cb1-153" title="153"><span class="st">      padding: 0.5em 0;</span></a>
-<a class="sourceLine" id="cb1-154" title="154"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-155" title="155"></a>
-<a class="sourceLine" id="cb1-156" title="156"><span class="st">  &lt;/style&gt;</span></a>
-<a class="sourceLine" id="cb1-157" title="157"><span class="st">&lt;/head&gt;</span></a>
-<a class="sourceLine" id="cb1-158" title="158"><span class="st">&lt;body&gt;</span></a>
-<a class="sourceLine" id="cb1-159" title="159"><span class="st">&lt;main&gt;</span></a>
-<a class="sourceLine" id="cb1-160" title="160"><span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-161" title="161"></a>
-<a class="sourceLine" id="cb1-162" title="162"></a>
+<a class="sourceLine" id="cb1-115" title="115"><span class="st">    a:hover {</span></a>
+<a class="sourceLine" id="cb1-116" title="116"><span class="st">      text-decoration: underline;</span></a>
+<a class="sourceLine" id="cb1-117" title="117"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-118" title="118"></a>
+<a class="sourceLine" id="cb1-119" title="119"><span class="st">    :focus {</span></a>
+<a class="sourceLine" id="cb1-120" title="120"><span class="st">      outline: 2px solid var(--text);</span></a>
+<a class="sourceLine" id="cb1-121" title="121"><span class="st">      outline-offset: 2px;</span></a>
+<a class="sourceLine" id="cb1-122" title="122"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-123" title="123"></a>
+<a class="sourceLine" id="cb1-124" title="124"></a>
+<a class="sourceLine" id="cb1-125" title="125"><span class="st">    article {</span></a>
+<a class="sourceLine" id="cb1-126" title="126"><span class="st">        margin: 0;</span></a>
+<a class="sourceLine" id="cb1-127" title="127"><span class="st">        padding: 0.5em;</span></a>
+<a class="sourceLine" id="cb1-128" title="128"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-129" title="129"></a>
+<a class="sourceLine" id="cb1-130" title="130"><span class="st">    dialog {</span></a>
+<a class="sourceLine" id="cb1-131" title="131"><span class="st">        background-color: var(--bg);</span></a>
+<a class="sourceLine" id="cb1-132" title="132"><span class="st">        border: 1px solid var(--border);</span></a>
+<a class="sourceLine" id="cb1-133" title="133"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-134" title="134"></a>
+<a class="sourceLine" id="cb1-135" title="135"><span class="st">    .pull-right {</span></a>
+<a class="sourceLine" id="cb1-136" title="136"><span class="st">      float: right;</span></a>
+<a class="sourceLine" id="cb1-137" title="137"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-138" title="138"><span class="st">    html:has(dialog[open]:modal) {</span></a>
+<a class="sourceLine" id="cb1-139" title="139"><span class="st">      overflow: hidden;</span></a>
+<a class="sourceLine" id="cb1-140" title="140"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-141" title="141"><span class="st">    dialog span {</span></a>
+<a class="sourceLine" id="cb1-142" title="142"><span class="st">      font-weight: normal;</span></a>
+<a class="sourceLine" id="cb1-143" title="143"><span class="st">      margin-top: 0.5rem;</span></a>
+<a class="sourceLine" id="cb1-144" title="144"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-145" title="145"><span class="st">    .display-none {</span></a>
+<a class="sourceLine" id="cb1-146" title="146"><span class="st">      display: none;</span></a>
+<a class="sourceLine" id="cb1-147" title="147"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-148" title="148"><span class="st">    main {</span></a>
+<a class="sourceLine" id="cb1-149" title="149"><span class="st">      overflow-x: hidden;</span></a>
+<a class="sourceLine" id="cb1-150" title="150"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-151" title="151"><span class="st">    ul {</span></a>
+<a class="sourceLine" id="cb1-152" title="152"><span class="st">      padding: 0 1em;</span></a>
+<a class="sourceLine" id="cb1-153" title="153"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-154" title="154"><span class="st">    li {</span></a>
+<a class="sourceLine" id="cb1-155" title="155"><span class="st">      padding: 0.5em 0;</span></a>
+<a class="sourceLine" id="cb1-156" title="156"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-157" title="157"></a>
+<a class="sourceLine" id="cb1-158" title="158"><span class="st">  &lt;/style&gt;</span></a>
+<a class="sourceLine" id="cb1-159" title="159"><span class="st">&lt;/head&gt;</span></a>
+<a class="sourceLine" id="cb1-160" title="160"><span class="st">&lt;body&gt;</span></a>
+<a class="sourceLine" id="cb1-161" title="161"><span class="st">&lt;main&gt;</span></a>
+<a class="sourceLine" id="cb1-162" title="162"><span class="st">&#39;</span></a>
 <a class="sourceLine" id="cb1-163" title="163"></a>
-<a class="sourceLine" id="cb1-164" title="164"><span class="bu">echo</span> <span class="st">&#39;&lt;dialog&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-165" title="165"><span class="bu">echo</span> <span class="st">&#39;&lt;a href=&quot;#&quot; class=&quot;pull-right&quot;&gt;Close&lt;/a&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-166" title="166"></a>
-<a class="sourceLine" id="cb1-167" title="167"><span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-164" title="164"></a>
+<a class="sourceLine" id="cb1-165" title="165"></a>
+<a class="sourceLine" id="cb1-166" title="166"><span class="bu">echo</span> <span class="st">&#39;&lt;dialog&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-167" title="167"><span class="bu">echo</span> <span class="st">&#39;&lt;a href=&quot;#&quot; class=&quot;pull-right&quot;&gt;Close&lt;/a&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-168" title="168"></a>
-<a class="sourceLine" id="cb1-169" title="169"><span class="bu">echo</span> <span class="st">&#39;&lt;h1&gt;update&lt;/h1&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-169" title="169"><span class="bu">echo</span></a>
 <a class="sourceLine" id="cb1-170" title="170"></a>
-<a class="sourceLine" id="cb1-171" title="171"><span class="kw">{</span></a>
-<a class="sourceLine" id="cb1-172" title="172">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
-<a class="sourceLine" id="cb1-173" title="173">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-174" title="174"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
-<a class="sourceLine" id="cb1-175" title="175">  <span class="bu">echo</span> <span class="st">&quot;&lt;h2 id=&#39;update/</span><span class="va">$datum</span><span class="st">&#39;&gt;&lt;a href=&#39;#update/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h2&gt;&quot;</span></a>
-<a class="sourceLine" id="cb1-176" title="176">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-177" title="177">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
+<a class="sourceLine" id="cb1-171" title="171"><span class="bu">echo</span> <span class="st">&#39;&lt;h1&gt;update&lt;/h1&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-172" title="172"></a>
+<a class="sourceLine" id="cb1-173" title="173"><span class="kw">{</span></a>
+<a class="sourceLine" id="cb1-174" title="174">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
+<a class="sourceLine" id="cb1-175" title="175">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-176" title="176"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-177" title="177">  <span class="bu">echo</span> <span class="st">&quot;&lt;h2 id=&#39;update/</span><span class="va">$datum</span><span class="st">&#39;&gt;&lt;a href=&#39;#update/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h2&gt;&quot;</span></a>
 <a class="sourceLine" id="cb1-178" title="178">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-179" title="179"><span class="kw">done</span> <span class="kw">|</span> <span class="ex">pandoc</span></a>
-<a class="sourceLine" id="cb1-180" title="180"></a>
-<a class="sourceLine" id="cb1-181" title="181"><span class="bu">echo</span> <span class="st">&#39;&lt;/dialog&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-179" title="179">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
+<a class="sourceLine" id="cb1-180" title="180">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-181" title="181"><span class="kw">done</span> <span class="kw">|</span> <span class="ex">pandoc</span></a>
 <a class="sourceLine" id="cb1-182" title="182"></a>
-<a class="sourceLine" id="cb1-183" title="183"><span class="bu">echo</span> <span class="st">&#39;&lt;article&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-183" title="183"><span class="bu">echo</span> <span class="st">&#39;&lt;/dialog&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-184" title="184"></a>
-<a class="sourceLine" id="cb1-185" title="185"><span class="ex">pandoc</span> README.md</a>
+<a class="sourceLine" id="cb1-185" title="185"><span class="bu">echo</span> <span class="st">&#39;&lt;article&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-186" title="186"></a>
-<a class="sourceLine" id="cb1-187" title="187"><span class="bu">echo</span> <span class="st">&#39;&lt;/article&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-187" title="187"><span class="ex">pandoc</span> README.md</a>
 <a class="sourceLine" id="cb1-188" title="188"></a>
-<a class="sourceLine" id="cb1-189" title="189"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-189" title="189"><span class="bu">echo</span> <span class="st">&#39;&lt;/article&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-190" title="190"></a>
-<a class="sourceLine" id="cb1-191" title="191"><span class="ex">npx</span> babel -f - --presets=@babel/preset-env <span class="op">&lt;&lt;&lt;</span> <span class="st">&#39;(function () {</span></a>
-<a class="sourceLine" id="cb1-192" title="192"><span class="st">  for (const item of document.querySelectorAll(&quot;h1,h2,h3&quot;)) {</span></a>
-<a class="sourceLine" id="cb1-193" title="193"></a>
-<a class="sourceLine" id="cb1-194" title="194"><span class="st">    if (item.children.length !== 0) continue</span></a>
-<a class="sourceLine" id="cb1-195" title="195"><span class="st">    // if (item.childNodes[0].nodeType !== item.TEXT_NODE) continue</span></a>
-<a class="sourceLine" id="cb1-196" title="196"></a>
-<a class="sourceLine" id="cb1-197" title="197"><span class="st">    const id = item.innerText</span></a>
+<a class="sourceLine" id="cb1-191" title="191"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-192" title="192"></a>
+<a class="sourceLine" id="cb1-193" title="193"><span class="ex">npx</span> babel -f - --presets=@babel/preset-env <span class="op">&lt;&lt;&lt;</span> <span class="st">&#39;(function () {</span></a>
+<a class="sourceLine" id="cb1-194" title="194"><span class="st">  for (const item of document.querySelectorAll(&quot;h1,h2,h3&quot;)) {</span></a>
+<a class="sourceLine" id="cb1-195" title="195"></a>
+<a class="sourceLine" id="cb1-196" title="196"><span class="st">    if (item.children.length !== 0) continue</span></a>
+<a class="sourceLine" id="cb1-197" title="197"><span class="st">    // if (item.childNodes[0].nodeType !== item.TEXT_NODE) continue</span></a>
 <a class="sourceLine" id="cb1-198" title="198"></a>
-<a class="sourceLine" id="cb1-199" title="199"><span class="st">    item.setAttribute(&quot;id&quot;, id)</span></a>
+<a class="sourceLine" id="cb1-199" title="199"><span class="st">    const id = item.innerText</span></a>
 <a class="sourceLine" id="cb1-200" title="200"></a>
-<a class="sourceLine" id="cb1-201" title="201"><span class="st">    if (!id) return</span></a>
+<a class="sourceLine" id="cb1-201" title="201"><span class="st">    item.setAttribute(&quot;id&quot;, id)</span></a>
 <a class="sourceLine" id="cb1-202" title="202"></a>
-<a class="sourceLine" id="cb1-203" title="203"><span class="st">    const anchor = document.createElement(&quot;a&quot;)</span></a>
+<a class="sourceLine" id="cb1-203" title="203"><span class="st">    if (!id) return</span></a>
 <a class="sourceLine" id="cb1-204" title="204"></a>
-<a class="sourceLine" id="cb1-205" title="205"><span class="st">    anchor.setAttribute(&quot;href&quot;, `#${id}`)</span></a>
-<a class="sourceLine" id="cb1-206" title="206"><span class="st">    anchor.innerText = id</span></a>
-<a class="sourceLine" id="cb1-207" title="207"></a>
-<a class="sourceLine" id="cb1-208" title="208"><span class="st">    item.innerText = &quot;&quot;</span></a>
-<a class="sourceLine" id="cb1-209" title="209"><span class="st">    item.appendChild(anchor)</span></a>
-<a class="sourceLine" id="cb1-210" title="210"><span class="st">  }</span></a>
-<a class="sourceLine" id="cb1-211" title="211"><span class="st">})();&#39;</span> <span class="kw">|</span> <span class="ex">npx</span> terser</a>
-<a class="sourceLine" id="cb1-212" title="212"></a>
-<a class="sourceLine" id="cb1-213" title="213"><span class="bu">echo</span> <span class="st">&#39;&lt;/script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-205" title="205"><span class="st">    const anchor = document.createElement(&quot;a&quot;)</span></a>
+<a class="sourceLine" id="cb1-206" title="206"></a>
+<a class="sourceLine" id="cb1-207" title="207"><span class="st">    anchor.setAttribute(&quot;href&quot;, `#${id}`)</span></a>
+<a class="sourceLine" id="cb1-208" title="208"><span class="st">    anchor.innerText = id</span></a>
+<a class="sourceLine" id="cb1-209" title="209"></a>
+<a class="sourceLine" id="cb1-210" title="210"><span class="st">    item.innerText = &quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-211" title="211"><span class="st">    item.appendChild(anchor)</span></a>
+<a class="sourceLine" id="cb1-212" title="212"><span class="st">  }</span></a>
+<a class="sourceLine" id="cb1-213" title="213"><span class="st">})();&#39;</span> <span class="kw">|</span> <span class="ex">npx</span> terser</a>
 <a class="sourceLine" id="cb1-214" title="214"></a>
-<a class="sourceLine" id="cb1-215" title="215"><span class="bu">echo</span> <span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-216" title="216"><span class="st">&lt;/main&gt;</span></a>
-<a class="sourceLine" id="cb1-217" title="217"><span class="st">&lt;/body&gt;</span></a>
-<a class="sourceLine" id="cb1-218" title="218"><span class="st">&lt;/html&gt;</span></a>
-<a class="sourceLine" id="cb1-219" title="219"><span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-220" title="220"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
-<a class="sourceLine" id="cb1-221" title="221"></a></code></pre></div>
-<pre><code>2023-11-22T21+01:00</code></pre>
+<a class="sourceLine" id="cb1-215" title="215"><span class="bu">echo</span> <span class="st">&#39;&lt;/script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-216" title="216"></a>
+<a class="sourceLine" id="cb1-217" title="217"><span class="bu">echo</span> <span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-218" title="218"><span class="st">&lt;/main&gt;</span></a>
+<a class="sourceLine" id="cb1-219" title="219"><span class="st">&lt;/body&gt;</span></a>
+<a class="sourceLine" id="cb1-220" title="220"><span class="st">&lt;/html&gt;</span></a>
+<a class="sourceLine" id="cb1-221" title="221"><span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-222" title="222"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
+<a class="sourceLine" id="cb1-223" title="223"></a></code></pre></div>
+<pre><code>2023-11-22T22+01:00</code></pre>
 </details>
 </article>
 <script>
