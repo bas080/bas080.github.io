@@ -6,7 +6,7 @@ routing story is lacking.
 
 <a href="#update">View older updates</a>
 
-# whoami
+# Whoami
 
 I am Bas.
 
@@ -15,13 +15,13 @@ I am Bas.
 - [linkedin.com/bas080](https://www.linkedin.com/in/bas080)
 - [stackoverflow.com/bas080](https://stackoverflow.com/users/989394/bas080)
 
-## goal
+## Goal
 
 1. Become a better badminton player.
 2. Improve public transport.
 3. Keep my worms alive.
 
-## tool
+## Tool
 
 - [nextjs.org](https://nextjs.org)
 - [qwik.builder.io](https://qwik.builder.io)
@@ -31,14 +31,14 @@ I am Bas.
 - [leebyron.com/testcheck-js](http://leebyron.com/testcheck-js/)
 - [github.com/maaslalani/slides](https://github.com/maaslalani/slides)
 
-## like
+## Like
 
 - [minetest.net](https://www.minetest.net/)
 - [lichess.org](https://lichess.org/)
 - [wikipedia.org/Single-serving_site](https://en.wikipedia.org/wiki/Single-serving_site)
 - [How to with John Wilson](https://www.imdb.com/title/tt10801534/)
 
-## project
+## Project
 
 - [github.com/bas080/stops-timetables](https://github.com/bas080/stops-timetables)
 - [badmintonpaphos.com](https://badmintonpaphos.com)
@@ -48,7 +48,7 @@ I am Bas.
 ---
 
 [RSS](https://github.com/bas080/bas080.github.io/commits/master.atom) |
-[HOME](#)
+[Home](#)
 
 <details class="display-none">
 
@@ -229,7 +229,7 @@ echo '<a href="#" class="pull-right">Close</a>'
 
 echo
 
-echo '<h1>update</h1>'
+echo '<h1>Update</h1>'
 
 {
   git log --pretty=format:"%H %as" status.md
