@@ -48,7 +48,8 @@ I am Bas.
 ---
 
 [RSS](https://github.com/bas080/bas080.github.io/commits/master.atom) |
-[Home](#)
+[Home](#) |
+[Contact](#Whoami)
 
 <details class="display-none">
 
