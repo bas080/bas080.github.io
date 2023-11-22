@@ -4,7 +4,7 @@
 routing story is lacking.
 
 
-<a href="#update">View older updates</a>
+<a href="#Posts">View older posts</a>
 
 # Whoami
 
@@ -67,7 +67,7 @@ test -n "$RECUR" || {
   cat status.md
   echo
   echo
-  echo '<a href="#update">View older updates</a>'
+  echo '<a href="#Posts">View older posts</a>'
   echo
 
   RECUR=1 markatzea README.mz
@@ -90,7 +90,7 @@ echo '<!doctype html>
 
       function wow(event) {
         var dialog = document.getElementsByTagName("dialog")[0]
-        if (window.location.hash.startsWith("#update"))
+        if (window.location.hash.startsWith("#Posts"))
           dialog.showModal()
         else
           dialog.close()
@@ -231,13 +231,13 @@ echo '<a href="#" class="pull-right">Close</a>'
 
 echo
 
-echo '<h1>Update</h1>'
+echo '<h1>Posts</h1>'
 
 {
   git log --pretty=format:"%H %as" status.md
   echo
 } | while read -r hash datum; do
-  echo "<h2 id='update/$datum'><a href='#update/$datum'>$datum</a></h2>"
+  echo "<h2 id='Posts/$datum'><a href='#Posts/$datum'>$datum</a></h2>"
   echo
   git show "$hash:./status.md"
   echo

@@ -12,7 +12,7 @@
 
       function wow(event) {
         var dialog = document.getElementsByTagName("dialog")[0]
-        if (window.location.hash.startsWith("#update"))
+        if (window.location.hash.startsWith("#Posts"))
           dialog.showModal()
         else
           dialog.close()
@@ -148,35 +148,35 @@
 <dialog>
 <a href="#" class="pull-right">Close</a>
 
-<h1>Update</h1>
-<h2 id="update/2023-10-23">
-<a href='#update/2023-10-23'>2023-10-23</a>
+<h1>Posts</h1>
+<h2 id="Posts/2023-10-23">
+<a href='#Posts/2023-10-23'>2023-10-23</a>
 </h2>
 <p><a href="https://htmx.org/">htmx.org</a> seems like a great idea. However, the frontend routing story is lacking.</p>
-<h2 id="update/2023-10-18">
-<a href='#update/2023-10-18'>2023-10-18</a>
+<h2 id="Posts/2023-10-18">
+<a href='#Posts/2023-10-18'>2023-10-18</a>
 </h2>
 <blockquote>
 <p>“The old law of an <a href="https://en.wikipedia.org/wiki/Eye_for_an_eye">eye for an eye</a> leaves everyone blind.”</p>
 <p>— <cite>Coretta Scott King</cite></p>
 </blockquote>
-<h2 id="update/2023-10-13">
-<a href='#update/2023-10-13'>2023-10-13</a>
+<h2 id="Posts/2023-10-13">
+<a href='#Posts/2023-10-13'>2023-10-13</a>
 </h2>
 <p>Great to see <a href="https://www.npmjs.com/">npmjs.com</a> improve their accessibility.</p>
-<h2 id="update/2023-10-12">
-<a href='#update/2023-10-12'>2023-10-12</a>
+<h2 id="Posts/2023-10-12">
+<a href='#Posts/2023-10-12'>2023-10-12</a>
 </h2>
 <p>Remember to freely use and support <a href="https://adblockplus.org/">adblockplus.org</a>.</p>
-<h2 id="update/2023-10-11">
-<a href='#update/2023-10-11'>2023-10-11</a>
+<h2 id="Posts/2023-10-11">
+<a href='#Posts/2023-10-11'>2023-10-11</a>
 </h2>
 <p>Is <a href="https://qwik.builder.io">qwik.builder.io</a> the future of <em>frontend</em> dev?</p>
 </dialog>
 <article>
 <h1 id="status">Status</h1>
 <p><a href="https://htmx.org/">htmx.org</a> seems like a great idea. However, the frontend routing story is lacking.</p>
-<p><a href="#update">View older updates</a></p>
+<p><a href="#Posts">View older posts</a></p>
 <h1 id="whoami">Whoami</h1>
 <p>I am Bas.</p>
 <ul>
@@ -227,7 +227,7 @@
 <a class="sourceLine" id="cb1-5" title="5">  <span class="fu">cat</span> status.md</a>
 <a class="sourceLine" id="cb1-6" title="6">  <span class="bu">echo</span></a>
 <a class="sourceLine" id="cb1-7" title="7">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-8" title="8">  <span class="bu">echo</span> <span class="st">&#39;&lt;a href=&quot;#update&quot;&gt;View older updates&lt;/a&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">  <span class="bu">echo</span> <span class="st">&#39;&lt;a href=&quot;#Posts&quot;&gt;View older posts&lt;/a&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-9" title="9">  <span class="bu">echo</span></a>
 <a class="sourceLine" id="cb1-10" title="10"></a>
 <a class="sourceLine" id="cb1-11" title="11">  <span class="va">RECUR=</span>1 <span class="ex">markatzea</span> README.mz</a>
@@ -250,7 +250,7 @@
 <a class="sourceLine" id="cb1-28" title="28"></a>
 <a class="sourceLine" id="cb1-29" title="29"><span class="st">      function wow(event) {</span></a>
 <a class="sourceLine" id="cb1-30" title="30"><span class="st">        var dialog = document.getElementsByTagName(&quot;dialog&quot;)[0]</span></a>
-<a class="sourceLine" id="cb1-31" title="31"><span class="st">        if (window.location.hash.startsWith(&quot;#update&quot;))</span></a>
+<a class="sourceLine" id="cb1-31" title="31"><span class="st">        if (window.location.hash.startsWith(&quot;#Posts&quot;))</span></a>
 <a class="sourceLine" id="cb1-32" title="32"><span class="st">          dialog.showModal()</span></a>
 <a class="sourceLine" id="cb1-33" title="33"><span class="st">        else</span></a>
 <a class="sourceLine" id="cb1-34" title="34"><span class="st">          dialog.close()</span></a>
@@ -391,13 +391,13 @@
 <a class="sourceLine" id="cb1-169" title="169"></a>
 <a class="sourceLine" id="cb1-170" title="170"><span class="bu">echo</span></a>
 <a class="sourceLine" id="cb1-171" title="171"></a>
-<a class="sourceLine" id="cb1-172" title="172"><span class="bu">echo</span> <span class="st">&#39;&lt;h1&gt;Update&lt;/h1&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-172" title="172"><span class="bu">echo</span> <span class="st">&#39;&lt;h1&gt;Posts&lt;/h1&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-173" title="173"></a>
 <a class="sourceLine" id="cb1-174" title="174"><span class="kw">{</span></a>
 <a class="sourceLine" id="cb1-175" title="175">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
 <a class="sourceLine" id="cb1-176" title="176">  <span class="bu">echo</span></a>
 <a class="sourceLine" id="cb1-177" title="177"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
-<a class="sourceLine" id="cb1-178" title="178">  <span class="bu">echo</span> <span class="st">&quot;&lt;h2 id=&#39;update/</span><span class="va">$datum</span><span class="st">&#39;&gt;&lt;a href=&#39;#update/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h2&gt;&quot;</span></a>
+<a class="sourceLine" id="cb1-178" title="178">  <span class="bu">echo</span> <span class="st">&quot;&lt;h2 id=&#39;Posts/</span><span class="va">$datum</span><span class="st">&#39;&gt;&lt;a href=&#39;#Posts/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h2&gt;&quot;</span></a>
 <a class="sourceLine" id="cb1-179" title="179">  <span class="bu">echo</span></a>
 <a class="sourceLine" id="cb1-180" title="180">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
 <a class="sourceLine" id="cb1-181" title="181">  <span class="bu">echo</span></a>
