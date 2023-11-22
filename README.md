@@ -106,10 +106,10 @@ echo '<!doctype html>
     :root, ::backdrop {
         --bg: #fff;
         --accent-bg: #f5f7ff;
-        --text: #212121;
+        --text: midnightblue;
         --text-light: #585858;
         --border: #898EA4;
-        --accent: darkmagenta;
+        --accent: deeppink;
         --code: #d81b60;
         --preformatted: #444;
         --marked: #ffdd33;
