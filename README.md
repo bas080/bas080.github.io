@@ -140,19 +140,23 @@ echo '<!doctype html>
 
 
     hr {
-        margin: 2em 0;
+        margin: 2rem 0;
     }
 
     ul {
       list-style-type: square;
     }
 
+    ul, ol {
+      padding-left: 0;
+      list-style-position: inside;
+    }
+
     body {
-      margin: 5vw;
+      margin: 0 3vh;
       font-family: monospace;
       color: var(--text);
       background-color: var(--bg);
-      font-size: 150%;
     }
 
 
@@ -162,6 +166,8 @@ echo '<!doctype html>
 
     h1, h2, h3 {
       font-size: 1em;
+      padding-top: 3vh;
+      margin: 0;
     }
 
     h1 a, h2 a, h3 a {
@@ -169,10 +175,6 @@ echo '<!doctype html>
       color: var(--bg);
       padding: 0 1ex;
       display: inline;
-    }
-
-    h2 a, h3 a {
-      color: var(--bg) !important;
     }
 
     a:hover {
@@ -184,10 +186,8 @@ echo '<!doctype html>
       outline-offset: 2px;
     }
 
-
-    article {
-        margin: 0;
-        padding: 0.5em;
+    p, li {
+      line-height: 1.625;
     }
 
     dialog {
@@ -201,21 +201,11 @@ echo '<!doctype html>
     html:has(dialog[open]:modal) {
       overflow: hidden;
     }
-    dialog span {
-      font-weight: normal;
-      margin-top: 0.5rem;
-    }
     .display-none {
       display: none;
     }
-    main {
+    body {
       overflow-x: hidden;
-    }
-    ul {
-      padding: 0 1em;
-    }
-    li {
-      padding: 0.5em 0;
     }
 
   </style>
@@ -245,11 +235,7 @@ done | pandoc
 
 echo '</dialog>'
 
-echo '<article>'
-
 pandoc README.md
-
-echo '</article>'
 
 echo '<script>'
 
@@ -287,7 +273,7 @@ echo '
 
 ```
 ```
-2023-11-22T22+01:00
+2023-11-23T13+01:00
 ```
 </details>
 
