@@ -1,7 +1,7 @@
 # Status
 
-[htmx.org](https://htmx.org/) seems like a great idea. However, the frontend
-routing story is lacking.
+Having fun with @rage working on [issue](https://github.com/bas080/issue) (working
+title) to make issue/notes tracking more fun and portable.
 
 
 <a href="#Posts">View older posts</a>
@@ -14,6 +14,46 @@ I am Bas.
 - [github.com/bas080](https://github.com/bas080)
 - [linkedin.com/bas080](https://www.linkedin.com/in/bas080)
 - [stackoverflow.com/bas080](https://stackoverflow.com/users/989394/bas080)
+
+## Focus
+
+What I am spending most of my time on in 2023.
+
+> Adds up to 100%.
+
+<dl>
+
+  <dt>Web Components</dt>
+  <dd title="5/100">
+    <meter max="100" value="5">5/100</meter>
+  </dd>
+
+  <dt>Postgres</dt>
+  <dd title="5/100">
+    <meter max="100" value="5">5/100</meter>
+  </dd>
+
+  <dt>Single Page Applications</dt>
+  <dd title="20/100">
+    <meter max="100" value="20">20/100</meter>
+  </dd>
+
+  <dt>Meta frameworks</dt>
+  <dd title="20/100">
+    <meter max="100" value="20">20/100</meter>
+  </dd>
+
+  <dt>Automated Testing</dt>
+  <dd title="10/100">
+    <meter max="100" value="10">10/100</meter>
+  </dd>
+
+  <dt>Web Accessibility</dt>
+  <dd title="40/100">
+    <meter max="100" value="40">40/100</meter>
+  </dd>
+
+</dl>
 
 ## Goal
 
@@ -40,6 +80,7 @@ I am Bas.
 
 ## Project
 
+- [github.com/bas080/issue](https://github.com/bas080/issue)
 - [github.com/bas080/stops-timetables](https://github.com/bas080/stops-timetables)
 - [badmintonpaphos.com](https://badmintonpaphos.com)
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
@@ -110,7 +151,7 @@ echo '<!doctype html>
         --accent-bg: #f5f7ff;
         --text: midnightblue;
         --text-light: #585858;
-        --border: #898EA4;
+        --border: gainsboro;
         --accent: deeppink;
         --code: #d81b60;
         --preformatted: #444;
@@ -122,6 +163,7 @@ echo '<!doctype html>
       :root, ::backdrop {
           color-scheme: dark;
           --bg: #212121;
+          --border: #444444;
           --accent-bg: #2b2b2b;
           --text: #dcdcdc;
           --text-light: #ababab;
@@ -132,6 +174,22 @@ echo '<!doctype html>
       }
     }
 
+    dl {
+      max-width: 512px;
+      column-gap: 0;
+      row-gap: 0;
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+    }
+
+    dt, dd {
+      border-bottom: 1px solid var(--border);
+      margin-left: 0;
+    }
+
+    meter {
+      width: 100%;
+    }
 
     a {
         text-decoration: none;
@@ -273,7 +331,7 @@ echo '
 
 ```
 ```
-2023-11-23T13+01:00
+2023-12-07T00+01:00
 ```
 </details>
 

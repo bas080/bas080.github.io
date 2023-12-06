@@ -32,7 +32,7 @@
         --accent-bg: #f5f7ff;
         --text: midnightblue;
         --text-light: #585858;
-        --border: #898EA4;
+        --border: gainsboro;
         --accent: deeppink;
         --code: #d81b60;
         --preformatted: #444;
@@ -44,6 +44,7 @@
       :root, ::backdrop {
           color-scheme: dark;
           --bg: #212121;
+          --border: #444444;
           --accent-bg: #2b2b2b;
           --text: #dcdcdc;
           --text-light: #ababab;
@@ -54,6 +55,22 @@
       }
     }
 
+    dl {
+      max-width: 512px;
+      column-gap: 0;
+      row-gap: 0;
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+    }
+
+    dt, dd {
+      border-bottom: 1px solid var(--border);
+      margin-left: 0;
+    }
+
+    meter {
+      width: 100%;
+    }
 
     a {
         text-decoration: none;
@@ -139,6 +156,10 @@
 <a href="#" class="pull-right">Close</a>
 
 <h1>Posts</h1>
+<h2 id="Posts/2023-12-06">
+<a href='#Posts/2023-12-06'>2023-12-06</a>
+</h2>
+<p>Having fun with <span class="citation" data-cites="rage">@rage</span> working on <a href="https://github.com/bas080/issue">issue</a> (working title) to make issue/notes tracking more fun and portable.</p>
 <h2 id="Posts/2023-10-23">
 <a href='#Posts/2023-10-23'>2023-10-23</a>
 </h2>
@@ -164,7 +185,7 @@
 <p>Is <a href="https://qwik.builder.io">qwik.builder.io</a> the future of <em>frontend</em> dev?</p>
 </dialog>
 <h1 id="status">Status</h1>
-<p><a href="https://htmx.org/">htmx.org</a> seems like a great idea. However, the frontend routing story is lacking.</p>
+<p>Having fun with <span class="citation" data-cites="rage">@rage</span> working on <a href="https://github.com/bas080/issue">issue</a> (working title) to make issue/notes tracking more fun and portable.</p>
 <p><a href="#Posts">View older posts</a></p>
 <h1 id="whoami">Whoami</h1>
 <p>I am Bas.</p>
@@ -174,6 +195,49 @@
 <li><a href="https://www.linkedin.com/in/bas080">linkedin.com/bas080</a></li>
 <li><a href="https://stackoverflow.com/users/989394/bas080">stackoverflow.com/bas080</a></li>
 </ul>
+<h2 id="focus">Focus</h2>
+<p>What I am spending most of my time on in 2023.</p>
+<blockquote>
+<p>Adds up to 100%.</p>
+</blockquote>
+<dl>
+<dt>
+Web Components
+</dt>
+<dd title="5/100">
+<meter max="100" value="5">5/100</meter>
+</dd>
+<dt>
+Postgres
+</dt>
+<dd title="5/100">
+<meter max="100" value="5">5/100</meter>
+</dd>
+<dt>
+Single Page Applications
+</dt>
+<dd title="20/100">
+<meter max="100" value="20">20/100</meter>
+</dd>
+<dt>
+Meta frameworks
+</dt>
+<dd title="20/100">
+<meter max="100" value="20">20/100</meter>
+</dd>
+<dt>
+Automated Testing
+</dt>
+<dd title="10/100">
+<meter max="100" value="10">10/100</meter>
+</dd>
+<dt>
+Web Accessibility
+</dt>
+<dd title="40/100">
+<meter max="100" value="40">40/100</meter>
+</dd>
+</dl>
 <h2 id="goal">Goal</h2>
 <ol type="1">
 <li>Become a better badminton player.</li>
@@ -199,6 +263,7 @@
 </ul>
 <h2 id="project">Project</h2>
 <ul>
+<li><a href="https://github.com/bas080/issue">github.com/bas080/issue</a></li>
 <li><a href="https://github.com/bas080/stops-timetables">github.com/bas080/stops-timetables</a></li>
 <li><a href="https://badmintonpaphos.com">badmintonpaphos.com</a></li>
 <li><a href="https://www.npmjs.com/package/sendscript">npmjs.com/package/sendscript</a></li>
@@ -259,7 +324,7 @@
 <a class="sourceLine" id="cb1-48" title="48"><span class="st">        --accent-bg: #f5f7ff;</span></a>
 <a class="sourceLine" id="cb1-49" title="49"><span class="st">        --text: midnightblue;</span></a>
 <a class="sourceLine" id="cb1-50" title="50"><span class="st">        --text-light: #585858;</span></a>
-<a class="sourceLine" id="cb1-51" title="51"><span class="st">        --border: #898EA4;</span></a>
+<a class="sourceLine" id="cb1-51" title="51"><span class="st">        --border: gainsboro;</span></a>
 <a class="sourceLine" id="cb1-52" title="52"><span class="st">        --accent: deeppink;</span></a>
 <a class="sourceLine" id="cb1-53" title="53"><span class="st">        --code: #d81b60;</span></a>
 <a class="sourceLine" id="cb1-54" title="54"><span class="st">        --preformatted: #444;</span></a>
@@ -271,155 +336,172 @@
 <a class="sourceLine" id="cb1-60" title="60"><span class="st">      :root, ::backdrop {</span></a>
 <a class="sourceLine" id="cb1-61" title="61"><span class="st">          color-scheme: dark;</span></a>
 <a class="sourceLine" id="cb1-62" title="62"><span class="st">          --bg: #212121;</span></a>
-<a class="sourceLine" id="cb1-63" title="63"><span class="st">          --accent-bg: #2b2b2b;</span></a>
-<a class="sourceLine" id="cb1-64" title="64"><span class="st">          --text: #dcdcdc;</span></a>
-<a class="sourceLine" id="cb1-65" title="65"><span class="st">          --text-light: #ababab;</span></a>
-<a class="sourceLine" id="cb1-66" title="66"><span class="st">          --accent: deepskyblue;</span></a>
-<a class="sourceLine" id="cb1-67" title="67"><span class="st">          --code: #f06292;</span></a>
-<a class="sourceLine" id="cb1-68" title="68"><span class="st">          --preformatted: #ccc;</span></a>
-<a class="sourceLine" id="cb1-69" title="69"><span class="st">          --disabled: #111;</span></a>
-<a class="sourceLine" id="cb1-70" title="70"><span class="st">      }</span></a>
-<a class="sourceLine" id="cb1-71" title="71"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-72" title="72"></a>
+<a class="sourceLine" id="cb1-63" title="63"><span class="st">          --border: #444444;</span></a>
+<a class="sourceLine" id="cb1-64" title="64"><span class="st">          --accent-bg: #2b2b2b;</span></a>
+<a class="sourceLine" id="cb1-65" title="65"><span class="st">          --text: #dcdcdc;</span></a>
+<a class="sourceLine" id="cb1-66" title="66"><span class="st">          --text-light: #ababab;</span></a>
+<a class="sourceLine" id="cb1-67" title="67"><span class="st">          --accent: deepskyblue;</span></a>
+<a class="sourceLine" id="cb1-68" title="68"><span class="st">          --code: #f06292;</span></a>
+<a class="sourceLine" id="cb1-69" title="69"><span class="st">          --preformatted: #ccc;</span></a>
+<a class="sourceLine" id="cb1-70" title="70"><span class="st">          --disabled: #111;</span></a>
+<a class="sourceLine" id="cb1-71" title="71"><span class="st">      }</span></a>
+<a class="sourceLine" id="cb1-72" title="72"><span class="st">    }</span></a>
 <a class="sourceLine" id="cb1-73" title="73"></a>
-<a class="sourceLine" id="cb1-74" title="74"><span class="st">    a {</span></a>
-<a class="sourceLine" id="cb1-75" title="75"><span class="st">        text-decoration: none;</span></a>
-<a class="sourceLine" id="cb1-76" title="76"><span class="st">        color: var(--accent);</span></a>
-<a class="sourceLine" id="cb1-77" title="77"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-78" title="78"></a>
-<a class="sourceLine" id="cb1-79" title="79"></a>
-<a class="sourceLine" id="cb1-80" title="80"><span class="st">    hr {</span></a>
-<a class="sourceLine" id="cb1-81" title="81"><span class="st">        margin: 2rem 0;</span></a>
-<a class="sourceLine" id="cb1-82" title="82"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-83" title="83"></a>
-<a class="sourceLine" id="cb1-84" title="84"><span class="st">    ul {</span></a>
-<a class="sourceLine" id="cb1-85" title="85"><span class="st">      list-style-type: square;</span></a>
-<a class="sourceLine" id="cb1-86" title="86"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-87" title="87"></a>
-<a class="sourceLine" id="cb1-88" title="88"><span class="st">    ul, ol {</span></a>
-<a class="sourceLine" id="cb1-89" title="89"><span class="st">      padding-left: 0;</span></a>
-<a class="sourceLine" id="cb1-90" title="90"><span class="st">      list-style-position: inside;</span></a>
-<a class="sourceLine" id="cb1-91" title="91"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-92" title="92"></a>
-<a class="sourceLine" id="cb1-93" title="93"><span class="st">    body {</span></a>
-<a class="sourceLine" id="cb1-94" title="94"><span class="st">      margin: 0 3vh;</span></a>
-<a class="sourceLine" id="cb1-95" title="95"><span class="st">      font-family: monospace;</span></a>
-<a class="sourceLine" id="cb1-96" title="96"><span class="st">      color: var(--text);</span></a>
-<a class="sourceLine" id="cb1-97" title="97"><span class="st">      background-color: var(--bg);</span></a>
-<a class="sourceLine" id="cb1-98" title="98"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-99" title="99"></a>
+<a class="sourceLine" id="cb1-74" title="74"><span class="st">    dl {</span></a>
+<a class="sourceLine" id="cb1-75" title="75"><span class="st">      max-width: 512px;</span></a>
+<a class="sourceLine" id="cb1-76" title="76"><span class="st">      column-gap: 0;</span></a>
+<a class="sourceLine" id="cb1-77" title="77"><span class="st">      row-gap: 0;</span></a>
+<a class="sourceLine" id="cb1-78" title="78"><span class="st">      display: grid;</span></a>
+<a class="sourceLine" id="cb1-79" title="79"><span class="st">      grid-template-columns: 4fr 1fr;</span></a>
+<a class="sourceLine" id="cb1-80" title="80"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-81" title="81"></a>
+<a class="sourceLine" id="cb1-82" title="82"><span class="st">    dt, dd {</span></a>
+<a class="sourceLine" id="cb1-83" title="83"><span class="st">      border-bottom: 1px solid var(--border);</span></a>
+<a class="sourceLine" id="cb1-84" title="84"><span class="st">      margin-left: 0;</span></a>
+<a class="sourceLine" id="cb1-85" title="85"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-86" title="86"></a>
+<a class="sourceLine" id="cb1-87" title="87"><span class="st">    meter {</span></a>
+<a class="sourceLine" id="cb1-88" title="88"><span class="st">      width: 100%;</span></a>
+<a class="sourceLine" id="cb1-89" title="89"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-90" title="90"></a>
+<a class="sourceLine" id="cb1-91" title="91"><span class="st">    a {</span></a>
+<a class="sourceLine" id="cb1-92" title="92"><span class="st">        text-decoration: none;</span></a>
+<a class="sourceLine" id="cb1-93" title="93"><span class="st">        color: var(--accent);</span></a>
+<a class="sourceLine" id="cb1-94" title="94"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-95" title="95"></a>
+<a class="sourceLine" id="cb1-96" title="96"></a>
+<a class="sourceLine" id="cb1-97" title="97"><span class="st">    hr {</span></a>
+<a class="sourceLine" id="cb1-98" title="98"><span class="st">        margin: 2rem 0;</span></a>
+<a class="sourceLine" id="cb1-99" title="99"><span class="st">    }</span></a>
 <a class="sourceLine" id="cb1-100" title="100"></a>
-<a class="sourceLine" id="cb1-101" title="101"><span class="st">    h2, h3 {</span></a>
-<a class="sourceLine" id="cb1-102" title="102"><span class="st">        font-weight: normal;</span></a>
+<a class="sourceLine" id="cb1-101" title="101"><span class="st">    ul {</span></a>
+<a class="sourceLine" id="cb1-102" title="102"><span class="st">      list-style-type: square;</span></a>
 <a class="sourceLine" id="cb1-103" title="103"><span class="st">    }</span></a>
 <a class="sourceLine" id="cb1-104" title="104"></a>
-<a class="sourceLine" id="cb1-105" title="105"><span class="st">    h1, h2, h3 {</span></a>
-<a class="sourceLine" id="cb1-106" title="106"><span class="st">      font-size: 1em;</span></a>
-<a class="sourceLine" id="cb1-107" title="107"><span class="st">      padding-top: 3vh;</span></a>
-<a class="sourceLine" id="cb1-108" title="108"><span class="st">      margin: 0;</span></a>
-<a class="sourceLine" id="cb1-109" title="109"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-110" title="110"></a>
-<a class="sourceLine" id="cb1-111" title="111"><span class="st">    h1 a, h2 a, h3 a {</span></a>
-<a class="sourceLine" id="cb1-112" title="112"><span class="st">      background-color: var(--text);</span></a>
-<a class="sourceLine" id="cb1-113" title="113"><span class="st">      color: var(--bg);</span></a>
-<a class="sourceLine" id="cb1-114" title="114"><span class="st">      padding: 0 1ex;</span></a>
-<a class="sourceLine" id="cb1-115" title="115"><span class="st">      display: inline;</span></a>
-<a class="sourceLine" id="cb1-116" title="116"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-105" title="105"><span class="st">    ul, ol {</span></a>
+<a class="sourceLine" id="cb1-106" title="106"><span class="st">      padding-left: 0;</span></a>
+<a class="sourceLine" id="cb1-107" title="107"><span class="st">      list-style-position: inside;</span></a>
+<a class="sourceLine" id="cb1-108" title="108"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-109" title="109"></a>
+<a class="sourceLine" id="cb1-110" title="110"><span class="st">    body {</span></a>
+<a class="sourceLine" id="cb1-111" title="111"><span class="st">      margin: 0 3vh;</span></a>
+<a class="sourceLine" id="cb1-112" title="112"><span class="st">      font-family: monospace;</span></a>
+<a class="sourceLine" id="cb1-113" title="113"><span class="st">      color: var(--text);</span></a>
+<a class="sourceLine" id="cb1-114" title="114"><span class="st">      background-color: var(--bg);</span></a>
+<a class="sourceLine" id="cb1-115" title="115"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-116" title="116"></a>
 <a class="sourceLine" id="cb1-117" title="117"></a>
-<a class="sourceLine" id="cb1-118" title="118"><span class="st">    a:hover {</span></a>
-<a class="sourceLine" id="cb1-119" title="119"><span class="st">      text-decoration: underline;</span></a>
+<a class="sourceLine" id="cb1-118" title="118"><span class="st">    h2, h3 {</span></a>
+<a class="sourceLine" id="cb1-119" title="119"><span class="st">        font-weight: normal;</span></a>
 <a class="sourceLine" id="cb1-120" title="120"><span class="st">    }</span></a>
 <a class="sourceLine" id="cb1-121" title="121"></a>
-<a class="sourceLine" id="cb1-122" title="122"><span class="st">    :focus {</span></a>
-<a class="sourceLine" id="cb1-123" title="123"><span class="st">      outline: 2px solid var(--text);</span></a>
-<a class="sourceLine" id="cb1-124" title="124"><span class="st">      outline-offset: 2px;</span></a>
-<a class="sourceLine" id="cb1-125" title="125"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-126" title="126"></a>
-<a class="sourceLine" id="cb1-127" title="127"><span class="st">    p, li {</span></a>
-<a class="sourceLine" id="cb1-128" title="128"><span class="st">      line-height: 1.625;</span></a>
-<a class="sourceLine" id="cb1-129" title="129"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-130" title="130"></a>
-<a class="sourceLine" id="cb1-131" title="131"><span class="st">    dialog {</span></a>
-<a class="sourceLine" id="cb1-132" title="132"><span class="st">        background-color: var(--bg);</span></a>
-<a class="sourceLine" id="cb1-133" title="133"><span class="st">        border: 1px solid var(--border);</span></a>
-<a class="sourceLine" id="cb1-134" title="134"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-135" title="135"></a>
-<a class="sourceLine" id="cb1-136" title="136"><span class="st">    .pull-right {</span></a>
-<a class="sourceLine" id="cb1-137" title="137"><span class="st">      float: right;</span></a>
-<a class="sourceLine" id="cb1-138" title="138"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-139" title="139"><span class="st">    html:has(dialog[open]:modal) {</span></a>
-<a class="sourceLine" id="cb1-140" title="140"><span class="st">      overflow: hidden;</span></a>
-<a class="sourceLine" id="cb1-141" title="141"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-142" title="142"><span class="st">    .display-none {</span></a>
-<a class="sourceLine" id="cb1-143" title="143"><span class="st">      display: none;</span></a>
-<a class="sourceLine" id="cb1-144" title="144"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-145" title="145"><span class="st">    body {</span></a>
-<a class="sourceLine" id="cb1-146" title="146"><span class="st">      overflow-x: hidden;</span></a>
-<a class="sourceLine" id="cb1-147" title="147"><span class="st">    }</span></a>
-<a class="sourceLine" id="cb1-148" title="148"></a>
-<a class="sourceLine" id="cb1-149" title="149"><span class="st">  &lt;/style&gt;</span></a>
-<a class="sourceLine" id="cb1-150" title="150"><span class="st">&lt;/head&gt;</span></a>
-<a class="sourceLine" id="cb1-151" title="151"><span class="st">&lt;body&gt;</span></a>
-<a class="sourceLine" id="cb1-152" title="152"><span class="st">&lt;main&gt;</span></a>
-<a class="sourceLine" id="cb1-153" title="153"><span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-154" title="154"></a>
-<a class="sourceLine" id="cb1-155" title="155"></a>
-<a class="sourceLine" id="cb1-156" title="156"></a>
-<a class="sourceLine" id="cb1-157" title="157"><span class="bu">echo</span> <span class="st">&#39;&lt;dialog&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-158" title="158"><span class="bu">echo</span> <span class="st">&#39;&lt;a href=&quot;#&quot; class=&quot;pull-right&quot;&gt;Close&lt;/a&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-159" title="159"></a>
-<a class="sourceLine" id="cb1-160" title="160"><span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-161" title="161"></a>
-<a class="sourceLine" id="cb1-162" title="162"><span class="bu">echo</span> <span class="st">&#39;&lt;h1&gt;Posts&lt;/h1&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-163" title="163"></a>
-<a class="sourceLine" id="cb1-164" title="164"><span class="kw">{</span></a>
-<a class="sourceLine" id="cb1-165" title="165">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
-<a class="sourceLine" id="cb1-166" title="166">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-167" title="167"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
-<a class="sourceLine" id="cb1-168" title="168">  <span class="bu">echo</span> <span class="st">&quot;&lt;h2 id=&#39;Posts/</span><span class="va">$datum</span><span class="st">&#39;&gt;&lt;a href=&#39;#Posts/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h2&gt;&quot;</span></a>
-<a class="sourceLine" id="cb1-169" title="169">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-170" title="170">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
-<a class="sourceLine" id="cb1-171" title="171">  <span class="bu">echo</span></a>
-<a class="sourceLine" id="cb1-172" title="172"><span class="kw">done</span> <span class="kw">|</span> <span class="ex">pandoc</span></a>
+<a class="sourceLine" id="cb1-122" title="122"><span class="st">    h1, h2, h3 {</span></a>
+<a class="sourceLine" id="cb1-123" title="123"><span class="st">      font-size: 1em;</span></a>
+<a class="sourceLine" id="cb1-124" title="124"><span class="st">      padding-top: 3vh;</span></a>
+<a class="sourceLine" id="cb1-125" title="125"><span class="st">      margin: 0;</span></a>
+<a class="sourceLine" id="cb1-126" title="126"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-127" title="127"></a>
+<a class="sourceLine" id="cb1-128" title="128"><span class="st">    h1 a, h2 a, h3 a {</span></a>
+<a class="sourceLine" id="cb1-129" title="129"><span class="st">      background-color: var(--text);</span></a>
+<a class="sourceLine" id="cb1-130" title="130"><span class="st">      color: var(--bg);</span></a>
+<a class="sourceLine" id="cb1-131" title="131"><span class="st">      padding: 0 1ex;</span></a>
+<a class="sourceLine" id="cb1-132" title="132"><span class="st">      display: inline;</span></a>
+<a class="sourceLine" id="cb1-133" title="133"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-134" title="134"></a>
+<a class="sourceLine" id="cb1-135" title="135"><span class="st">    a:hover {</span></a>
+<a class="sourceLine" id="cb1-136" title="136"><span class="st">      text-decoration: underline;</span></a>
+<a class="sourceLine" id="cb1-137" title="137"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-138" title="138"></a>
+<a class="sourceLine" id="cb1-139" title="139"><span class="st">    :focus {</span></a>
+<a class="sourceLine" id="cb1-140" title="140"><span class="st">      outline: 2px solid var(--text);</span></a>
+<a class="sourceLine" id="cb1-141" title="141"><span class="st">      outline-offset: 2px;</span></a>
+<a class="sourceLine" id="cb1-142" title="142"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-143" title="143"></a>
+<a class="sourceLine" id="cb1-144" title="144"><span class="st">    p, li {</span></a>
+<a class="sourceLine" id="cb1-145" title="145"><span class="st">      line-height: 1.625;</span></a>
+<a class="sourceLine" id="cb1-146" title="146"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-147" title="147"></a>
+<a class="sourceLine" id="cb1-148" title="148"><span class="st">    dialog {</span></a>
+<a class="sourceLine" id="cb1-149" title="149"><span class="st">        background-color: var(--bg);</span></a>
+<a class="sourceLine" id="cb1-150" title="150"><span class="st">        border: 1px solid var(--border);</span></a>
+<a class="sourceLine" id="cb1-151" title="151"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-152" title="152"></a>
+<a class="sourceLine" id="cb1-153" title="153"><span class="st">    .pull-right {</span></a>
+<a class="sourceLine" id="cb1-154" title="154"><span class="st">      float: right;</span></a>
+<a class="sourceLine" id="cb1-155" title="155"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-156" title="156"><span class="st">    html:has(dialog[open]:modal) {</span></a>
+<a class="sourceLine" id="cb1-157" title="157"><span class="st">      overflow: hidden;</span></a>
+<a class="sourceLine" id="cb1-158" title="158"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-159" title="159"><span class="st">    .display-none {</span></a>
+<a class="sourceLine" id="cb1-160" title="160"><span class="st">      display: none;</span></a>
+<a class="sourceLine" id="cb1-161" title="161"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-162" title="162"><span class="st">    body {</span></a>
+<a class="sourceLine" id="cb1-163" title="163"><span class="st">      overflow-x: hidden;</span></a>
+<a class="sourceLine" id="cb1-164" title="164"><span class="st">    }</span></a>
+<a class="sourceLine" id="cb1-165" title="165"></a>
+<a class="sourceLine" id="cb1-166" title="166"><span class="st">  &lt;/style&gt;</span></a>
+<a class="sourceLine" id="cb1-167" title="167"><span class="st">&lt;/head&gt;</span></a>
+<a class="sourceLine" id="cb1-168" title="168"><span class="st">&lt;body&gt;</span></a>
+<a class="sourceLine" id="cb1-169" title="169"><span class="st">&lt;main&gt;</span></a>
+<a class="sourceLine" id="cb1-170" title="170"><span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-171" title="171"></a>
+<a class="sourceLine" id="cb1-172" title="172"></a>
 <a class="sourceLine" id="cb1-173" title="173"></a>
-<a class="sourceLine" id="cb1-174" title="174"><span class="bu">echo</span> <span class="st">&#39;&lt;/dialog&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-175" title="175"></a>
-<a class="sourceLine" id="cb1-176" title="176"><span class="ex">pandoc</span> README.md</a>
-<a class="sourceLine" id="cb1-177" title="177"></a>
-<a class="sourceLine" id="cb1-178" title="178"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-179" title="179"></a>
-<a class="sourceLine" id="cb1-180" title="180"><span class="ex">npx</span> babel -f - --presets=@babel/preset-env <span class="op">&lt;&lt;&lt;</span> <span class="st">&#39;(function () {</span></a>
-<a class="sourceLine" id="cb1-181" title="181"><span class="st">  for (const item of document.querySelectorAll(&quot;h1,h2,h3&quot;)) {</span></a>
-<a class="sourceLine" id="cb1-182" title="182"></a>
-<a class="sourceLine" id="cb1-183" title="183"><span class="st">    if (item.children.length !== 0) continue</span></a>
-<a class="sourceLine" id="cb1-184" title="184"><span class="st">    // if (item.childNodes[0].nodeType !== item.TEXT_NODE) continue</span></a>
-<a class="sourceLine" id="cb1-185" title="185"></a>
-<a class="sourceLine" id="cb1-186" title="186"><span class="st">    const id = item.innerText</span></a>
-<a class="sourceLine" id="cb1-187" title="187"></a>
-<a class="sourceLine" id="cb1-188" title="188"><span class="st">    item.setAttribute(&quot;id&quot;, id)</span></a>
-<a class="sourceLine" id="cb1-189" title="189"></a>
-<a class="sourceLine" id="cb1-190" title="190"><span class="st">    if (!id) return</span></a>
-<a class="sourceLine" id="cb1-191" title="191"></a>
-<a class="sourceLine" id="cb1-192" title="192"><span class="st">    const anchor = document.createElement(&quot;a&quot;)</span></a>
-<a class="sourceLine" id="cb1-193" title="193"></a>
-<a class="sourceLine" id="cb1-194" title="194"><span class="st">    anchor.setAttribute(&quot;href&quot;, `#${id}`)</span></a>
-<a class="sourceLine" id="cb1-195" title="195"><span class="st">    anchor.innerText = id</span></a>
+<a class="sourceLine" id="cb1-174" title="174"><span class="bu">echo</span> <span class="st">&#39;&lt;dialog&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-175" title="175"><span class="bu">echo</span> <span class="st">&#39;&lt;a href=&quot;#&quot; class=&quot;pull-right&quot;&gt;Close&lt;/a&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-176" title="176"></a>
+<a class="sourceLine" id="cb1-177" title="177"><span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-178" title="178"></a>
+<a class="sourceLine" id="cb1-179" title="179"><span class="bu">echo</span> <span class="st">&#39;&lt;h1&gt;Posts&lt;/h1&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-180" title="180"></a>
+<a class="sourceLine" id="cb1-181" title="181"><span class="kw">{</span></a>
+<a class="sourceLine" id="cb1-182" title="182">  <span class="fu">git</span> log --pretty=format:<span class="st">&quot;%H %as&quot;</span> status.md</a>
+<a class="sourceLine" id="cb1-183" title="183">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-184" title="184"><span class="kw">}</span> <span class="kw">|</span> <span class="kw">while</span> <span class="bu">read</span> -r <span class="va">hash</span> <span class="va">datum</span>; <span class="kw">do</span></a>
+<a class="sourceLine" id="cb1-185" title="185">  <span class="bu">echo</span> <span class="st">&quot;&lt;h2 id=&#39;Posts/</span><span class="va">$datum</span><span class="st">&#39;&gt;&lt;a href=&#39;#Posts/</span><span class="va">$datum</span><span class="st">&#39;&gt;</span><span class="va">$datum</span><span class="st">&lt;/a&gt;&lt;/h2&gt;&quot;</span></a>
+<a class="sourceLine" id="cb1-186" title="186">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-187" title="187">  <span class="fu">git</span> show <span class="st">&quot;</span><span class="va">$hash</span><span class="st">:./status.md&quot;</span></a>
+<a class="sourceLine" id="cb1-188" title="188">  <span class="bu">echo</span></a>
+<a class="sourceLine" id="cb1-189" title="189"><span class="kw">done</span> <span class="kw">|</span> <span class="ex">pandoc</span></a>
+<a class="sourceLine" id="cb1-190" title="190"></a>
+<a class="sourceLine" id="cb1-191" title="191"><span class="bu">echo</span> <span class="st">&#39;&lt;/dialog&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-192" title="192"></a>
+<a class="sourceLine" id="cb1-193" title="193"><span class="ex">pandoc</span> README.md</a>
+<a class="sourceLine" id="cb1-194" title="194"></a>
+<a class="sourceLine" id="cb1-195" title="195"><span class="bu">echo</span> <span class="st">&#39;&lt;script&gt;&#39;</span></a>
 <a class="sourceLine" id="cb1-196" title="196"></a>
-<a class="sourceLine" id="cb1-197" title="197"><span class="st">    item.innerText = &quot;&quot;</span></a>
-<a class="sourceLine" id="cb1-198" title="198"><span class="st">    item.appendChild(anchor)</span></a>
-<a class="sourceLine" id="cb1-199" title="199"><span class="st">  }</span></a>
-<a class="sourceLine" id="cb1-200" title="200"><span class="st">})();&#39;</span> <span class="kw">|</span> <span class="ex">npx</span> terser</a>
-<a class="sourceLine" id="cb1-201" title="201"></a>
-<a class="sourceLine" id="cb1-202" title="202"><span class="bu">echo</span> <span class="st">&#39;&lt;/script&gt;&#39;</span></a>
-<a class="sourceLine" id="cb1-203" title="203"></a>
-<a class="sourceLine" id="cb1-204" title="204"><span class="bu">echo</span> <span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-205" title="205"><span class="st">&lt;/main&gt;</span></a>
-<a class="sourceLine" id="cb1-206" title="206"><span class="st">&lt;/body&gt;</span></a>
-<a class="sourceLine" id="cb1-207" title="207"><span class="st">&lt;/html&gt;</span></a>
-<a class="sourceLine" id="cb1-208" title="208"><span class="st">&#39;</span></a>
-<a class="sourceLine" id="cb1-209" title="209"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
-<a class="sourceLine" id="cb1-210" title="210"></a></code></pre></div>
-<pre><code>2023-11-23T13+01:00</code></pre>
+<a class="sourceLine" id="cb1-197" title="197"><span class="ex">npx</span> babel -f - --presets=@babel/preset-env <span class="op">&lt;&lt;&lt;</span> <span class="st">&#39;(function () {</span></a>
+<a class="sourceLine" id="cb1-198" title="198"><span class="st">  for (const item of document.querySelectorAll(&quot;h1,h2,h3&quot;)) {</span></a>
+<a class="sourceLine" id="cb1-199" title="199"></a>
+<a class="sourceLine" id="cb1-200" title="200"><span class="st">    if (item.children.length !== 0) continue</span></a>
+<a class="sourceLine" id="cb1-201" title="201"><span class="st">    // if (item.childNodes[0].nodeType !== item.TEXT_NODE) continue</span></a>
+<a class="sourceLine" id="cb1-202" title="202"></a>
+<a class="sourceLine" id="cb1-203" title="203"><span class="st">    const id = item.innerText</span></a>
+<a class="sourceLine" id="cb1-204" title="204"></a>
+<a class="sourceLine" id="cb1-205" title="205"><span class="st">    item.setAttribute(&quot;id&quot;, id)</span></a>
+<a class="sourceLine" id="cb1-206" title="206"></a>
+<a class="sourceLine" id="cb1-207" title="207"><span class="st">    if (!id) return</span></a>
+<a class="sourceLine" id="cb1-208" title="208"></a>
+<a class="sourceLine" id="cb1-209" title="209"><span class="st">    const anchor = document.createElement(&quot;a&quot;)</span></a>
+<a class="sourceLine" id="cb1-210" title="210"></a>
+<a class="sourceLine" id="cb1-211" title="211"><span class="st">    anchor.setAttribute(&quot;href&quot;, `#${id}`)</span></a>
+<a class="sourceLine" id="cb1-212" title="212"><span class="st">    anchor.innerText = id</span></a>
+<a class="sourceLine" id="cb1-213" title="213"></a>
+<a class="sourceLine" id="cb1-214" title="214"><span class="st">    item.innerText = &quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-215" title="215"><span class="st">    item.appendChild(anchor)</span></a>
+<a class="sourceLine" id="cb1-216" title="216"><span class="st">  }</span></a>
+<a class="sourceLine" id="cb1-217" title="217"><span class="st">})();&#39;</span> <span class="kw">|</span> <span class="ex">npx</span> terser</a>
+<a class="sourceLine" id="cb1-218" title="218"></a>
+<a class="sourceLine" id="cb1-219" title="219"><span class="bu">echo</span> <span class="st">&#39;&lt;/script&gt;&#39;</span></a>
+<a class="sourceLine" id="cb1-220" title="220"></a>
+<a class="sourceLine" id="cb1-221" title="221"><span class="bu">echo</span> <span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-222" title="222"><span class="st">&lt;/main&gt;</span></a>
+<a class="sourceLine" id="cb1-223" title="223"><span class="st">&lt;/body&gt;</span></a>
+<a class="sourceLine" id="cb1-224" title="224"><span class="st">&lt;/html&gt;</span></a>
+<a class="sourceLine" id="cb1-225" title="225"><span class="st">&#39;</span></a>
+<a class="sourceLine" id="cb1-226" title="226"><span class="kw">}</span> <span class="op">&gt;</span> <span class="ex">index.html</span></a>
+<a class="sourceLine" id="cb1-227" title="227"></a></code></pre></div>
+<pre><code>2023-12-07T00+01:00</code></pre>
 </details>
 <script>
 "use strict";function _createForOfIteratorHelper(o,allowArrayLike){var it=typeof Symbol!=="undefined"&&o[Symbol.iterator]||o["@@iterator"];if(!it){if(Array.isArray(o)||(it=_unsupportedIterableToArray(o))||allowArrayLike&&o&&typeof o.length==="number"){if(it)o=it;var i=0;var F=function F(){};return{s:F,n:function n(){if(i>=o.length)return{done:true};return{done:false,value:o[i++]}},e:function e(_e){throw _e},f:F}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var normalCompletion=true,didErr=false,err;return{s:function s(){it=it.call(o)},n:function n(){var step=it.next();normalCompletion=step.done;return step},e:function e(_e2){didErr=true;err=_e2},f:function f(){try{if(!normalCompletion&&it["return"]!=null)it["return"]()}finally{if(didErr)throw err}}}}function _unsupportedIterableToArray(o,minLen){if(!o)return;if(typeof o==="string")return _arrayLikeToArray(o,minLen);var n=Object.prototype.toString.call(o).slice(8,-1);if(n==="Object"&&o.constructor)n=o.constructor.name;if(n==="Map"||n==="Set")return Array.from(o);if(n==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return _arrayLikeToArray(o,minLen)}function _arrayLikeToArray(arr,len){if(len==null||len>arr.length)len=arr.length;for(var i=0,arr2=new Array(len);i<len;i++)arr2[i]=arr[i];return arr2}(function(){var _iterator=_createForOfIteratorHelper(document.querySelectorAll("h1,h2,h3")),_step;try{for(_iterator.s();!(_step=_iterator.n()).done;){var item=_step.value;if(item.children.length!==0)continue;var id=item.innerText;item.setAttribute("id",id);if(!id)return;var anchor=document.createElement("a");anchor.setAttribute("href","#".concat(id));anchor.innerText=id;item.innerText="";item.appendChild(anchor)}}catch(err){_iterator.e(err)}finally{_iterator.f()}})();
