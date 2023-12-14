@@ -174,21 +174,17 @@ echo '<!doctype html>
       }
     }
 
-    dl {
-      max-width: 512px;
-      column-gap: 0;
-      row-gap: 0;
-      display: grid;
-      grid-template-columns: 4fr 1fr;
+    dt {
+      margin-top: 1rem;
     }
 
-    dt, dd {
-      border-bottom: 1px solid var(--border);
-      margin-left: 0;
+    meter::-webkit-meter-optimum-value {
+      background: var(--code);
     }
 
     meter {
-      width: 100%;
+      width: calc(100% - 5vw);
+      max-width: 512px;
     }
 
     a {
@@ -331,7 +327,7 @@ echo '
 
 ```
 ```
-2023-12-07T00+01:00
+2023-12-14T16+01:00
 ```
 </details>
 
