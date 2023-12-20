@@ -179,7 +179,7 @@ echo '<!doctype html>
     }
 
     meter::-webkit-meter-optimum-value {
-      background: var(--code);
+      background: var(--accent);
     }
 
     meter {
@@ -327,7 +327,7 @@ echo '
 
 ```
 ```
-2023-12-14T16+01:00
+2023-12-20T02+01:00
 ```
 </details>
 
