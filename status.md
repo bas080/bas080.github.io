@@ -1,2 +1,4 @@
-Having fun with @rage working on [issue](https://github.com/bas080/issue) (working
-title) to make issue/notes tracking more fun and portable.
+How do you know if an idea is worth trying? Is it a gut feeling or a
+well-weighed option?
+
+When in doubt, procrastinate.

@@ -1,10 +1,14 @@
 # Status
 
-Having fun with @rage working on [issue](https://github.com/bas080/issue) (working
-title) to make issue/notes tracking more fun and portable.
+How do you know if an idea is worth trying? Is it a gut feeling or a
+well-weighed option?
+
+When in doubt, procrastinate.
 
 
 <a href="#Posts">View older posts</a>
+
+#!/usr/bin/env markatzea
 
 # Whoami
 
@@ -121,7 +125,7 @@ echo '<!doctype html>
 <html lang="en">
 <head>
   <title>bas080</title>
-  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🍲&lt;/text&gt;&lt;/svg&gt;"/>
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;🍞&lt;/text&gt;&lt;/svg&gt;"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Greetings from your friendly and helpful neighborhood web dev.">
@@ -327,7 +331,7 @@ echo '
 
 ```
 ```
-2023-12-20T02+01:00
+2023-12-21T02+01:00
 ```
 </details>
 
