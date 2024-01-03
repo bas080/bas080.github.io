@@ -8,8 +8,6 @@ When in doubt, procrastinate.
 
 <a href="#Posts">View older posts</a>
 
-#!/usr/bin/env markatzea
-
 # Whoami
 
 I am Bas.
@@ -331,7 +329,7 @@ echo '
 
 ```
 ```
-2023-12-30T01+01:00
+2024-01-03T15+01:00
 ```
 </details>
 
