@@ -1,7 +1,7 @@
 
-Follow this project!
+Watch this project!
 
-/follow bas080.github.io/straw
+/watch bas080.github.io/straw
 
 ----
 
