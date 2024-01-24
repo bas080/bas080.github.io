@@ -88,6 +88,10 @@ What I am spending most of my time on in 2023.
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
+## Interesting
+
+- [www.visidata.org](https://www.visidata.org)
+
 ---
 
 [RSS](https://github.com/bas080/bas080.github.io/commits/master.atom) |
@@ -329,7 +333,7 @@ echo '
 
 ```
 ```
-2024-01-03T15+01:00
+2024-01-24T19+01:00
 ```
 </details>
 
