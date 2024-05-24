@@ -1,9 +1,6 @@
 # Status
 
-How do you know if an idea is worth trying? Is it a gut feeling or a
-well-weighed option?
-
-When in doubt, procrastinate.
+What if you use only the browser to develop, edit, build and publish websites?
 
 
 <a href="#Posts">View older posts</a>
@@ -333,7 +330,7 @@ echo '
 
 ```
 ```
-2024-01-24T19+01:00
+2024-05-24T14+02:00
 ```
 </details>
 
