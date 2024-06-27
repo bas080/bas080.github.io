@@ -16,40 +16,35 @@ I am Bas.
 
 ## Focus
 
-What I am spending most of my time on in 2023.
+What I am spending most of my time on in 2024.
 
 > Adds up to 100%.
 
 <dl>
 
   <dt>Web Components</dt>
-  <dd title="5/100">
-    <meter max="100" value="5">5/100</meter>
+  <dd title="15/100">
+    <meter max="100" value="15">15/100</meter>
   </dd>
 
   <dt>Postgres</dt>
   <dd title="5/100">
-    <meter max="100" value="5">5/100</meter>
-  </dd>
-
-  <dt>Single Page Applications</dt>
-  <dd title="20/100">
-    <meter max="100" value="20">20/100</meter>
-  </dd>
-
-  <dt>Meta frameworks</dt>
-  <dd title="20/100">
-    <meter max="100" value="20">20/100</meter>
+    <meter max="500" value="5">5/100</meter>
   </dd>
 
   <dt>Automated Testing</dt>
-  <dd title="10/100">
-    <meter max="100" value="10">10/100</meter>
+  <dd title="15/100">
+    <meter max="100" value="15">15/100</meter>
   </dd>
 
   <dt>Web Accessibility</dt>
-  <dd title="40/100">
-    <meter max="100" value="40">40/100</meter>
+  <dd title="30/100">
+    <meter max="100" value="30">30/100</meter>
+  </dd>
+
+  <dt>Progress Web Apps (PWA)</dt>
+  <dd title="35/100">
+    <meter max="100" value="35">35/100</meter>
   </dd>
 
 </dl>
@@ -79,8 +74,8 @@ What I am spending most of my time on in 2023.
 
 ## Project
 
+- [github.com/bas080/toplist](https://github.com/bas080/toplist)
 - [github.com/bas080/straw](https://github.com/bas080/straw)
-- [github.com/bas080/stops-timetables](https://github.com/bas080/stops-timetables)
 - [badmintonpaphos.com](https://badmintonpaphos.com)
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
@@ -330,7 +325,7 @@ echo '
 
 ```
 ```
-2024-05-24T14+02:00
+2024-06-27T16+02:00
 ```
 </details>
 
