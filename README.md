@@ -1,6 +1,6 @@
 # Status
 
-What if you use only the browser to develop, edit, build and publish websites?
+A tool that scrolls based on the position of an audio recording.
 
 
 <a href="#Posts">View older posts</a>
@@ -325,7 +325,7 @@ echo '
 
 ```
 ```
-2024-06-27T16+02:00
+2024-07-12T03+02:00
 ```
 </details>
 
