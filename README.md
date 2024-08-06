@@ -1,6 +1,7 @@
 # Status
 
-A tool that scrolls based on the position of an audio recording.
+Padlock like wordgame where each side of the wheel should make a word together
+with the other wheels.
 
 
 <a href="#Posts">View older posts</a>
@@ -325,7 +326,7 @@ echo '
 
 ```
 ```
-2024-07-12T03+02:00
+2024-08-06T17+03:00
 ```
 </details>
 

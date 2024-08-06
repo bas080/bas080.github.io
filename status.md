@@ -1,1 +1,2 @@
-A tool that scrolls based on the position of an audio recording.
+Padlock like wordgame where each side of the wheel should make a word together
+with the other wheels.
