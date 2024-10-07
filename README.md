@@ -24,10 +24,11 @@ What I am spending most of my time on in 2024.
 <dl>
 
   <dt>Web Components</dt>
-  <dd title="15/100">
-    <meter max="100" value="15">15/100</meter>
+  <dd title="40/100">
+    <meter max="100" value="40">15/100</meter>
   </dd>
 
+  <!--
   <dt>Postgres</dt>
   <dd title="5/100">
     <meter max="500" value="5">5/100</meter>
@@ -37,15 +38,16 @@ What I am spending most of my time on in 2024.
   <dd title="15/100">
     <meter max="100" value="15">15/100</meter>
   </dd>
+  -->
 
   <dt>Web Accessibility</dt>
   <dd title="30/100">
     <meter max="100" value="30">30/100</meter>
   </dd>
 
-  <dt>Progress Web Apps (PWA)</dt>
-  <dd title="35/100">
-    <meter max="100" value="35">35/100</meter>
+  <dt>Progressive Web Apps (PWA)</dt>
+  <dd title="30/100">
+    <meter max="100" value="30">35/100</meter>
   </dd>
 
 </dl>
@@ -53,13 +55,14 @@ What I am spending most of my time on in 2024.
 ## Goal
 
 1. Become a better badminton player.
-2. Improve public transport.
+2. Improve the world with an app.
 3. Keep my worms alive.
 
 ## Tool
 
+- [webc](https://www.11ty.dev/docs/languages/webc/)
 - [nextjs.org](https://nextjs.org)
-- [qwik.builder.io](https://qwik.builder.io)
+- [vuejs.org](https://vuejs.org)
 - [pa11y.org](https://pa11y.org)
 - [selenium.dev](https://www.selenium.dev/selenium/docs/api/javascript/index.html)
 - [testcafe.io](https://testcafe.io)
@@ -70,7 +73,6 @@ What I am spending most of my time on in 2024.
 
 - [minetest.net](https://www.minetest.net/)
 - [lichess.org](https://lichess.org/)
-- [wikipedia.org/Single-serving_site](https://en.wikipedia.org/wiki/Single-serving_site)
 - [How to with John Wilson](https://www.imdb.com/title/tt10801534/)
 
 ## Project
@@ -81,8 +83,9 @@ What I am spending most of my time on in 2024.
 - [npmjs.com/package/sendscript](https://www.npmjs.com/package/sendscript)
 - [rezerv.it](https://rezerv.it)
 
-## Interesting
+## Interests
 
+- [wikipedia.org/Progressive_enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement)
 - [www.visidata.org](https://www.visidata.org)
 
 ---
@@ -326,7 +329,7 @@ echo '
 
 ```
 ```
-2024-08-06T17+03:00
+2024-10-08T01+03:00
 ```
 </details>
 
